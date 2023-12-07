@@ -26,8 +26,7 @@ export default function Navbar() {
           <div className="">
             <NavMenu />
           </div>
-          {/* dark :213872 */}
-          {/* base :344A80  */}
+          
           {/* build  button */}
           <div className="hidden md:block">
             <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-auto rounded-none ">
