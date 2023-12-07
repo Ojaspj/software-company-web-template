@@ -55,7 +55,7 @@ export default function Navbar() {
             </Sheet>
           </div>
         </div>
-      </Wrapper>
+      </Wrapper> 
     </div>
   );
 }
