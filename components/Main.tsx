@@ -4,13 +4,14 @@ import Wrapper from "./Wrapper";
 import Lottie from "lottie-react";
 import hero from "../public/hero.json";
 import { Button } from "./ui/button";
+import Services from "./Services";
 
 export default function Main() {
   return (
     <div className="w-full h-auto ">
       <Wrapper>
         {/* front banner  */}
-        <div className="flex w-full h-[650px] brder-2">
+        <div className="flex w-full h-[650px] ">
           {/* left part  */}
           <div className="flex flex-col justify-center w-full  md:w-1/2 h-full ">
             <div>
@@ -41,10 +42,20 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen border-2 ">
-
+        {/* trsuted by companies  */}
+        <div className="w-full h-[80vh] border-2 text-center p-10 my-8 flex flex-col  items-center">
+          <h1 className=" text-6xl font-bold font-serif ">
+            Trusted by <span className="text-[#344A80]">100+</span> companies
+            and new ventures
+          </h1>
+          <h2 className=" text-gray-500 font-light my-4 text-xl">
+            We have helped many companies and startups to build their products
+            and launch faster.
+          </h2>
         </div>
       </Wrapper>
+      {/* our services  */}
+      <Services />
     </div>
   );
 }
