@@ -9,9 +9,30 @@ import Wrapper from "./Wrapper";
 export default function Footer() {
   return (
     <div>
-        <Separator />
+      <Separator />
       <Wrapper>
         <div className="w-full h-[70vh]">
+          {/* subscribe  */}
+
+          <div className="flex flex-col md:flex-row md:w-full gap-4 md:items-center md:justify-between h-auto md:h-32 p-8">
+            <h1 className=" text-2xl font-bold text-[#213872] tracking-tighter">
+              Stay updated <br />
+              <span className="font-light text-lg">
+                we'll keep you posted with the latest updates.
+              </span>
+            </h1>
+            <div className="flex flex-col md:flex-row gap-2 md:gap-1">
+              <Input type="text" placeholder="Email" className=" w-72" />
+              <Button
+                variant={"link"}
+                className=" hover:bg-[#213872] border hover:text-white hover:no-underline text-[#344A80] h-10 rounded-md w-44 md:w-auto  "
+              >
+                <Link href="/">Subscribe for updates</Link>
+              </Button>
+            </div>
+          </div>
+          <Separator />
+
           <div className="w-full flex flex-wrap justify-between py-8">
             <div className=" h-auto w-auto">
               <img
@@ -92,25 +113,14 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              {/* subscribe  */}
-              <div className="flex flex-col md:flex-row md:w-[720px] gap-4 border  rounded-md md:items-center h-auto md:h-32 p-8">
-                <h1 className=" text-2xl font-bold text-gray-700 tracking-tighter">
-                  Stay updated
-                </h1>
-                <Input type="text" placeholder="Email" className=" w-72" />
-                <Button
-                  variant={"link"}
-                  className=" hover:bg-[#213872] border hover:text-white hover:no-underline text-[#344A80] h-10 rounded-md w-auto  "
-                >
-                  <Link href="/">Subscribe for updates</Link>
-                </Button>
-              </div>
             </div>
           </div>
           <Separator />
           <div className="w-full flex flex-col md:flex-row items-center py-4 md:py-0 justify-between md:h-[80px] text-gray-600  font-light text-md tracking-tight">
             <h1>Copyright 2023, Silicon Tech Nepal Pvt Ltd.</h1>
-            <Link href="/" className="hover:text-[#344A80]">Privacy Policy</Link>
+            <Link href="/" className="hover:text-[#344A80]">
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </Wrapper>

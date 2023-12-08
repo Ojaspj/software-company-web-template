@@ -34,7 +34,7 @@ export default function Main() {
           {/* left part  */}
           <div className="flex flex-col justify-center w-full  md:w-1/2 h-full ">
             <div>
-              <h1 className="  scroll-m-20 text-4xl font-serif font-bold tracking-tight lg:text-7xl">
+              <h1 className="  scroll-m-20 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
                 Bringing your{" "}
                 <span className="  italic text-[#344A80]">ideas and</span>{" "}
                 <span className="italic text-[#344A80]">innovations</span> to
