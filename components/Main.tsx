@@ -5,6 +5,22 @@ import Lottie from "lottie-react";
 import hero from "../public/hero.json";
 import { Button } from "./ui/button";
 import Services from "./Services";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  ReactIcon,
+  NextIcon,
+  AngularIcon,
+  PythonIcon,
+  NodeIcon,
+  TypescriptIcon,
+  PostgresIcon,
+  MongodbIcon,
+  PhpIcon,
+  MysqlIcon,
+  FirebaseIcon,
+  FlutterIcon,
+  KotlinIcon,
+} from "./Icon";
 
 export default function Main() {
   return (
@@ -48,14 +64,72 @@ export default function Main() {
             Trusted by <span className="text-[#344A80]">100+</span> companies
             and new ventures
           </h1>
-          <h2 className=" text-gray-500 font-light my-4 text-xl">
-            We have helped many companies and startups to build their products
-            and launch faster.
+          <h2 className=" text-gray-400 font-light my-4 text-xl">
+            We have helped many companies and startups to <br /> build their
+            products and launch faster.
           </h2>
         </div>
       </Wrapper>
       {/* our services  */}
       <Services />
+      {/* tech stack  */}
+      <Wrapper>
+        <div className="flex flex-col w-full h-auto   py-14">
+          <div>
+            <h1 className=" text-5xl font-bold font-serif text-center">
+              Tech Stack
+            </h1>
+            <h2 className=" text-gray-400 font-light my-2 text-xl text-center">
+              We use the latest technologies <br /> to build product.
+            </h2>
+          </div>
+          <Tabs
+            defaultValue="frontend"
+            className="w-full h-auto mt-8 flex flex-col justify-center"
+          >
+            <TabsList>
+              <TabsTrigger value="frontend">Frontend</TabsTrigger>
+              <TabsTrigger value="backend">Backend</TabsTrigger>
+              <TabsTrigger value="database">Databases</TabsTrigger>
+              <TabsTrigger value="mobile-app">
+                Mobile App Development
+              </TabsTrigger>
+            </TabsList>
+            <div className="my-4 p-4 flex items-center justify-center h-auto md:h-60 w-full">
+              <TabsContent value="frontend">
+                <div className="flex flex-wrap gap-8">
+                  <ReactIcon />
+                  <NextIcon />
+                  <AngularIcon />
+                </div>
+              </TabsContent>
+              <TabsContent value="backend">
+                <div className="flex flex-wrap gap-8">
+                  <PythonIcon />
+                  <NodeIcon />
+                  <TypescriptIcon />
+                  <PhpIcon />
+                </div>
+              </TabsContent>
+              <TabsContent value="database">
+                <div className="flex flex-wrap gap-8">
+                  <PostgresIcon />
+                  <MongodbIcon />
+                  <MysqlIcon />
+                  <FirebaseIcon />
+                </div>
+              </TabsContent>
+              <TabsContent value="mobile-app">
+                <div className="flex flex-wrap  gap-8">
+                  <FlutterIcon />
+                  <KotlinIcon />
+                </div>
+              </TabsContent>
+            </div>
+          </Tabs>
+        </div>
+      </Wrapper>
+      
     </div>
   );
 }
