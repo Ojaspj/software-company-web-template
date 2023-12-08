@@ -9,6 +9,7 @@ export default function Main() {
   return (
     <div className="w-full h-auto ">
       <Wrapper>
+        {/* front banner  */}
         <div className="flex w-full h-[650px] brder-2">
           {/* left part  */}
           <div className="flex flex-col justify-center w-full  md:w-1/2 h-full ">
@@ -39,6 +40,9 @@ export default function Main() {
               <Lottie animationData={hero} />
             </div>
           </div>
+        </div>
+        <div className="w-full h-screen border-2 ">
+
         </div>
       </Wrapper>
     </div>

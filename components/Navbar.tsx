@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Wrapper from "./Wrapper";
 import { MobNavMenu, NavMenu } from "./NavMenu";
 import { Button } from "./ui/button";
@@ -7,11 +7,30 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 export default function Navbar() {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  //get shadow while scroll
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className="w-full h-24 shadow-md flex items-center">
+    <div
+      className={`sticky top-0 z-10 bg-white w-full h-24  flex items-center ${
+        shadow ? "shadow-md" : null
+      }`}
+    >
       <Wrapper>
-        <div className="flex  pr-4 h-full w-full  flex-row justify-between items-center">
+        <div
+          className={`flex  pr-4 h-full w-full   flex-row justify-between items-center `}
+        >
           {/* logo  */}
           <div className="">
             <div className="">
@@ -26,7 +45,7 @@ export default function Navbar() {
           <div className="">
             <NavMenu />
           </div>
-          
+
           {/* build  button */}
           <div className="hidden md:block">
             <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-auto rounded-none ">
