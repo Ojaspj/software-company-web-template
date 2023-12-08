@@ -5,6 +5,7 @@ import { MobNavMenu, NavMenu } from "./NavMenu";
 import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import Link from "next/link";
 
 export default function Navbar() {
   const [shadow, setShadow] = useState(false);
@@ -49,7 +50,7 @@ export default function Navbar() {
           {/* build  button */}
           <div className="hidden md:block">
             <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-auto rounded-none ">
-              Build With Us
+              <Link href="/contact">Build With Us</Link>
             </Button>
           </div>
           {/* mobile menu  */}

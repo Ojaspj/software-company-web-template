@@ -21,6 +21,9 @@ import {
   FlutterIcon,
   KotlinIcon,
 } from "./Icon";
+import Link from "next/link";
+import { Input } from "./ui/input";
+import { Separator } from "./ui/separator";
 
 export default function Main() {
   return (
@@ -47,7 +50,7 @@ export default function Main() {
                 variant={"link"}
                 className="  ring-2 ring-[#344A80] hover:bg-[#344A80] hover:text-white  font-semibold tracking-tight text-xl my-4 text-[#344A80] hover:no-underline cursor-pointer"
               >
-                BUILD WITH US
+                <Link href="/contact">BUILD WITH US</Link>
               </Button>
             </div>
           </div>
@@ -74,7 +77,7 @@ export default function Main() {
       <Services />
       {/* tech stack  */}
       <Wrapper>
-        <div className="flex flex-col w-full h-auto   py-14">
+        <div className="flex flex-col w-full h-auto  py-14">
           <div>
             <h1 className=" text-5xl font-bold font-serif text-center">
               Tech Stack
@@ -128,8 +131,10 @@ export default function Main() {
             </div>
           </Tabs>
         </div>
+        {/* footer  */}
+        
+        
       </Wrapper>
-      
     </div>
   );
 }
