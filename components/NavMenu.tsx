@@ -81,13 +81,13 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
-          path === "/career"
+          path === "/careers"
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
          `}
         >
-          <Link href="/career" legacyBehavior passHref>
+          <Link href="/careers" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Join
             </NavigationMenuLink>
@@ -96,13 +96,13 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
-          path === "/blog"
+          path === "/blogs"
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
          `}
         >
-          <Link href="/blog" legacyBehavior passHref>
+          <Link href="/blogs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Blogs
             </NavigationMenuLink>

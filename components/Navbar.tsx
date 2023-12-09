@@ -155,7 +155,7 @@ export default function Navbar() {
                           </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem onClick={() => setOpen(false)}>
-                          <Link href="/blog" legacyBehavior passHref>
+                          <Link href="/blogs" legacyBehavior passHref>
                             <NavigationMenuLink
                               className={navigationMenuTriggerStyle()}
                             >
