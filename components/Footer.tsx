@@ -21,8 +21,12 @@ export default function Footer() {
                 we'll keep you posted with the latest updates.
               </span>
             </h1>
-            <div className="flex flex-col md:flex-row gap-2 md:gap-1">
-              <Input type="text" placeholder="Email" className=" w-72" />
+            <div className="flex flex-col md:flex-row gap-2 md:gap-3">
+              <Input
+                type="text"
+                placeholder="Email"
+                className=" w-72 border rounded-md h-10 border-gray-200"
+              />
               <Button
                 variant={"link"}
                 className=" hover:bg-[#213872] border hover:text-white hover:no-underline text-[#344A80] h-10 rounded-md w-44 md:w-auto  "
