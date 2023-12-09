@@ -41,7 +41,7 @@ export default function Main() {
                 life.
               </h1>
               <h2 className=" text-gray-500 font-light my-4 text-xl">
-                From small upgrades to complete structural transformations, we
+                From small upgrades to complete structural transformations, <br /> we
                 have the expertise to bring your vision to reality.
               </h2>
             </div>

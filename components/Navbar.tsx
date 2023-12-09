@@ -70,7 +70,7 @@ export default function Navbar() {
           </div>
           {/* mobile menu  */}
 
-          <div className="block ">
+          <div className="block md:hidden ">
             <Sheet open={open}>
               <SheetTrigger asChild>
                 <div onClick={() => setOpen(true)}>
@@ -95,7 +95,7 @@ export default function Navbar() {
                   </div>
                   {/* mobile menu  */}
                   <div className="my-8 ">
-                    <NavigationMenu className="block ">
+                    <NavigationMenu className="block md:hidden ">
                       <NavigationMenuList className="flex flex-col w-full  gap-3">
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/" legacyBehavior passHref>
