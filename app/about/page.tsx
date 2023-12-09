@@ -66,23 +66,23 @@ export default function About() {
   return (
     <div className="w-full min-h-screen h-auto ">
       <Wrapper>
-        <div className=" border w-full h-full px-6 py-14">
+        <div className="  w-full h-full px-2 md:px-6 py-8 md:py-14">
           {/* main front */}
-          <div className="flex h-[80vh]">
+          <div className="flex h-screen md:h-[70vh]">
             {/* left part  */}
-            <div className="w-1/2 border flex flex-col">
-              <h1 className=" text-xl tracking-tighter font-bold">ABOUT US</h1>
-              <h1 className=" mt-4 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
-                <span className="   text-[#344A80]">Designing</span> the future
+            <div className="w-full  flex flex-col items-center justify-center">
+              <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">ABOUT US</h1>
+              <h1 className=" text-center mt-4 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
+                <span className="   text-[#344A80]">Designing</span> the future <br />
                 with excellence.
               </h1>
-              <h2 className=" text-gray-500 font-light my-4 text-xl text-left">
+              <h2 className=" text-gray-500 font-light my-4 text-lg md:text-xl text-center">
                 <span className="text-[#344A80] font-semibold">
                   Silicon Tech
                 </span>
-                , formed by a team of highly skilled and experienced developers,
+                , formed by a team of highly skilled and experienced developers, <br />
                 designers and project managers. We are passionate about building
-                great products and worked with startups and enterprises to help
+                great products and worked <br /> with startups and enterprises to help
                 them build their products and launch faster.
               </h2>
               <div>
@@ -95,25 +95,25 @@ export default function About() {
               </div>
             </div>
             {/* right part  */}
-            <div className="w-1/2 h-full border flex flex-col justify-center"></div>
+            {/* <div className="w-1/2 h-full border flex flex-col justify-center"></div> */}
           </div>
         </div>
       </Wrapper>
       {/* years client and teams number  */}
-      <div className="flex justify-center gap-10 p-16 h-auto bg-accent  my-4  font-bold text-5xl">
-        <div className="  flex flex-col justify-center items-center w-60 h-24 ">
+      <div className="flex flex-col md:flex-row justify-center gap-10 w-auto p-20 h-auto bg-accent  my-8  font-bold text-5xl">
+        <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
           <h1 className="text-[#344A80] font-serif">100+</h1>
           <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
             Delighted Partnerships
           </h2>
         </div>
-        <div className="  flex flex-col justify-center items-center w-60 h-24 ">
+        <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
           <h1 className="text-[#344A80] font-serif">4+</h1>
           <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
             Years of innovation
           </h2>
         </div>
-        <div className="  flex flex-col justify-center items-center w-60 h-24 ">
+        <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
           <h1 className="text-[#344A80] font-serif">10+</h1>
           <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
             Team Member
@@ -133,7 +133,7 @@ export default function About() {
               <br /> behind the magic
             </h2>
             <div className="w-auto p-4  ">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
                 {data.map((item, index) => (
                   <div key={index} className="flex flex-col w-80 p-8  ">
                     <img
