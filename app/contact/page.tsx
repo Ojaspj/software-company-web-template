@@ -68,17 +68,17 @@ export default function Contact() {
   return (
     <div className="w-full h-auto border ">
       <Wrapper>
-        <div className="flex h-screen md:h-[80vh] border">
+        <div className="flex h-[83vh] md:h-[80vh] ">
           <div className="w-full  flex flex-col items-center justify-center">
             <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">
               CONTACT US
             </h1>
             <h1 className=" text-center mt-4 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
-              <span className="   text-[#344A80]">Let's </span> build together{" "}
+            Let's <span className="   text-[#344A80]">build </span>  together{" "}
             </h1>
             <h2 className=" text-gray-500 font-light my-4 text-lg md:text-xl text-center">
               Reach out to our friendly team for expert assistance,
-              collaboration opportunities, <br /> or any software-related
+              collaboration opportunities, <br className="hidden md:block" /> or any software-related
               queries. Your journey with innovative solutions begins with a
               simple click, <br /> contact us today and let's bring your ideas
               to life.
@@ -86,8 +86,8 @@ export default function Contact() {
           </div>
         </div>
         {/* contact details  */}
-        <div className="flex gap-4 w-full h-auto my-8 ">
-          <div className=" flex flex-col gap-14 w-[40%] h-full  p-8">
+        <div className="flex flex-col md:flex-row gap-4 w-full h-auto my-8 ">
+          <div className=" flex flex-col gap-14 w-auto md:w-[40%] h-full  md:p-8">
             <div className=" px-4">
               <h1 className=" flex gap-2 text-xl font-semibold tracking-tighter ">
                 <IoMdMail size={25} className="text-[#344A80]" />
@@ -104,7 +104,8 @@ export default function Contact() {
                 Phone
               </h1>
               <h1 className=" ml-8 text-lg font-light tracking-tight my-2 ">
-                hi@silicontech.com <br />
+                +977 9812345678 <br />
+                +977 9812345678
               </h1>
             </div>
             <div className=" p-4">
@@ -134,7 +135,7 @@ export default function Contact() {
             </div>
           </div>
           {/* form  */}
-          <div className="w-[60%] h-full  p-8">
+          <div className="w-[60%] h-full p-2 md:p-8">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
