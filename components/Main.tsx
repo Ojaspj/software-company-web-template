@@ -34,14 +34,14 @@ export default function Main() {
           {/* left part  */}
           <div className="flex flex-col justify-center w-full  md:w-1/2 h-full ">
             <div>
-              <h1 className="  scroll-m-20 text-4xl font-serif font-bold tracking-tight lg:text-7xl">
+              <h1 className="  scroll-m-20 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
                 Bringing your{" "}
                 <span className="  italic text-[#344A80]">ideas and</span>{" "}
                 <span className="italic text-[#344A80]">innovations</span> to
                 life.
               </h1>
               <h2 className=" text-gray-500 font-light my-4 text-xl">
-                From small upgrades to complete structural transformations, we
+                From small upgrades to complete structural transformations, <br /> we
                 have the expertise to bring your vision to reality.
               </h2>
             </div>
