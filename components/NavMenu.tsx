@@ -24,16 +24,34 @@ import { usePathname } from "next/navigation";
 import { SheetClose } from "./ui/sheet";
 import { useEffect, useRef, useState } from "react";
 
-const components: { title: string; href: string; description: string }[] = [
+export const components: { title: string; href: string; description: string; routes:string }[] = [
   {
     title: "Web Development",
-    href: "/",
+    routes: "web-development",
+    href: "/services/web-development",
     description:
       "Elevate Your Online Presence with Silicontech Nepal's Expert Web Development Service",
   },
   {
-    title: "Digital Marketing",
-    href: "/",
+    title: "Mobile App Development",
+    href: "/services/mobile-app-development",
+    routes: "mobile-app-development",
+    description:
+      "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
+  },
+  {
+    title: "Ecommerce Solutions",
+    href: "/services/ecommerce-solutions",
+    routes: "ecommerce-solutions",
+    
+    description:
+      "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
+  },
+  {
+    title: "UI/UX Design",
+    href: "/services/ui-ux-design",
+    routes: "ui-ux-design",
+
     description:
       "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
   },
@@ -64,13 +82,14 @@ export function NavMenu() {
 
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          <NavigationMenuContent className="">
+            <ul className="grid w-[400px] gap-3 p-4  md:w-[500px] md:grid-cols-2 lg:w-[700px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
                   href={component.href}
+                  className="hover:text-[#344A80]  "
                 >
                   {component.description}
                 </ListItem>
@@ -199,13 +218,13 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1  rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <div className="text-lg tracking-tight font-light  leading-none ">{title}</div>
+          <p className="line-clamp-2 text-sm leading-tight text-gray-500">
             {children}
           </p>
         </a>
