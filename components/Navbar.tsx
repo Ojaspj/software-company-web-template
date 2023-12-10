@@ -68,9 +68,7 @@ export default function Navbar() {
               variant={"link"}
               className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
             >
-              <Link href={'/contact'}>
-              BUILD WITH US
-              </Link>
+              <Link href={"/contact"}>BUILD WITH US</Link>
             </Button>
           </div>
 
