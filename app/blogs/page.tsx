@@ -54,7 +54,8 @@ export default function About() {
             BLOG
           </h1>
           <h1 className=" mt-4 text-5xl font-serif font-bold tracking-tight lg:text-6xl">
-            Navigating insights, trends,  and innovations
+            <span className="text-[#344A80] font-semibold">Navigating</span>{" "}
+            insights, trends, and innovations
           </h1>
         </div>
         <div className="flex justify-center md:p-14 w-full h-auto">
@@ -71,7 +72,9 @@ export default function About() {
                   </div>
                   <div className="py-4 cursor-pointer ">
                     <p className="mt-2 text-gray-600 font-light">{blog.date}</p>
-                    <h1 className=" mt-3 text-2xl font-bold hover:text-[#344A80]">{blog.title}</h1>
+                    <h1 className=" mt-3 text-2xl font-bold hover:text-[#344A80]">
+                      {blog.title}
+                    </h1>
                     {/* <p className="mt-4 text-gray-800 text-lg line-clamp-3 font-light">
                       {blog.description}
                     </p> */}

@@ -71,18 +71,18 @@ export default function Contact() {
     <div className="w-full h-auto border ">
       <Wrapper>
         <div className="flex h-[83vh] md:h-[80vh] ">
-          <div className="w-full  flex flex-col items-center justify-center">
-            <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">
+          <div className="w-full  flex flex-col md:items-center justify-center">
+            <h1 className="text-lg md:text-xl tracking-tighter text-gray-600 font-bold">
               CONTACT US
             </h1>
-            <h1 className=" text-center mt-4 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
+            <h1 className=" text-left md:text-center mt-4 text-4xl font-serif font-bold tracking-tight lg:text-7xl">
             Let's <span className="   text-[#344A80]">build </span>  together{" "}
             </h1>
-            <h2 className=" text-gray-500 font-light my-4 text-lg md:text-xl text-center">
+            <h2 className=" text-gray-500 font-light my-4 text-md md:text-xl md:text-center">
               Reach out to our friendly team for expert assistance,
               collaboration opportunities, <br className="hidden md:block" /> or any software-related
               queries. Your journey with innovative solutions begins with a
-              simple click, <br /> contact us today and let's bring your ideas
+              simple click, <br className="hidden md:block" /> contact us today and let's bring your ideas
               to life.
             </h2>
           </div>
