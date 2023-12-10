@@ -41,10 +41,7 @@ export function NavMenu() {
         <NavigationMenuItem
           className={`
         ${
-          path === "/services/web-development" ||
-          "/services/mobile-app-development" ||
-          "/services/ui-ux-design" ||
-          "/services/ecommerce-solutions"
+          path.startsWith("/services")
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
@@ -69,7 +66,7 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
-          path === "/careers"
+          path.startsWith('/careers')
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
@@ -84,7 +81,7 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
-          path === "/blogs"
+          path.startsWith("/blogs")
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
@@ -99,7 +96,7 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
-          path === "/about"
+          path.startsWith("/about")
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
         }
