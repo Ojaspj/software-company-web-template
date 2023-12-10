@@ -72,16 +72,16 @@ export default function Footer() {
                   </h1>
                   <ul className="text-lg tracking-tight font-light space-y-2 ">
                     <li className="hover:text-[#344A80]">
-                      <Link href="/about">Web Development</Link>
+                      <Link href="/services/web-development">Web Development</Link>
                     </li>
                     <li className="hover:text-[#344A80]">
-                      <Link href="/services">Mobile App Development</Link>
+                      <Link href="/services/mobile-app-development">Mobile App Development</Link>
                     </li>
                     <li className="hover:text-[#344A80]">
-                      <Link href="/career">Ecommerce Solutions</Link>
+                      <Link href="/services/ecommerce-solutions">Ecommerce Solutions</Link>
                     </li>
                     <li className="hover:text-[#344A80]">
-                      <Link href="/contact">UI/UX Design</Link>
+                      <Link href="/services/ui-ux-design">UI/UX Design</Link>
                     </li>
                   </ul>
                 </div>

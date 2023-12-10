@@ -50,11 +50,13 @@ export default function Navbar() {
           {/* logo  */}
           <div className="">
             <div className="">
-              <img
-                className="h-20 w-auto"
-                src="https://silicontechnepal.com.np/static/media/silicontech-transparent.69d53de28e59ff4b6157.png"
-                alt="logo"
-              />
+              <Link href={"/"}>
+                <img
+                  className="h-24 w-auto"
+                  src="https://silicontechnepal.com.np/static/media/silicontech-transparent.69d53de28e59ff4b6157.png"
+                  alt="logo"
+                />
+              </Link>
             </div>
           </div>
           {/* nav menus  */}
@@ -68,9 +70,7 @@ export default function Navbar() {
               variant={"link"}
               className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
             >
-              <Link href={'/contact'}>
-              BUILD WITH US
-              </Link>
+              <Link href={"/contact"}>BUILD WITH US</Link>
             </Button>
           </div>
 
@@ -196,7 +196,7 @@ export default function Navbar() {
             </Sheet>
           </div>
         </div>
-      </Wrapper> 
+      </Wrapper>
     </div>
   );
 }
