@@ -19,7 +19,6 @@ import { Input } from "@/components/ui/input";
 import React from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
 const formSchema = z.object({
@@ -178,7 +177,7 @@ export default function Contact() {
                       <FormLabel>Phone number</FormLabel>
                       <FormControl>
                         <Input
-                          className="custom-number-input"
+                          className="custom-number-input "
                           type="number"
                           placeholder="Enter your number"
                           min={0}
