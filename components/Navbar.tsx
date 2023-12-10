@@ -1,5 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 import Wrapper from "./Wrapper";
 import { Button } from "./ui/button";
 import { Menu, MoveRight, X } from "lucide-react";
@@ -23,6 +32,7 @@ import { NavMenu } from "./NavMenu";
 export default function Navbar() {
   const [shadow, setShadow] = useState(false);
   const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   // console.log(open)
 
   //get shadow while scroll
@@ -102,7 +112,7 @@ export default function Navbar() {
                   {/* mobile menu  */}
                   <div className="my-8 ">
                     <NavigationMenu className="block md:hidden ">
-                      <NavigationMenuList className="flex flex-col w-full  gap-3">
+                      <NavigationMenuList className=" flex flex-col w-full  gap-3">
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/" legacyBehavior passHref>
                             <NavigationMenuLink
@@ -114,11 +124,18 @@ export default function Navbar() {
                         </NavigationMenuItem>
 
                         <NavigationMenuItem>
-                          <Accordion type="single" collapsible>
+                          <Accordion
+                            type="single"
+
+                            collapsible
+                            className=" w-[205px]"
+                          >
                             <AccordionItem value="item-1">
-                              <AccordionTrigger>Service</AccordionTrigger>
+                              <AccordionTrigger className="text-lg text-gray-500 tracking-tight  font-light ">
+                                Service
+                              </AccordionTrigger>
                               <AccordionContent>
-                                <div className="ml-6 mt-2 flex flex-col -space-y-3 text-gray-500">
+                                <div className="ml-2 mt-2 flex flex-col text-gray-500">
                                   <Link
                                     href={"/services/web-development"}
                                     onClick={() => setOpen(false)}
@@ -127,21 +144,21 @@ export default function Navbar() {
                                   </Link>{" "}
                                   <br />
                                   <Link
-                                    href={"/services/web-development"}
+                                    href={"/services/mobile-app-development"}
                                     onClick={() => setOpen(false)}
                                   >
                                     Mobile App Development
                                   </Link>{" "}
                                   <br />
                                   <Link
-                                    href={"/services/web-development"}
+                                    href={"/services/ecommerce-solutions"}
                                     onClick={() => setOpen(false)}
                                   >
                                     Ecommerce Solutions
                                   </Link>{" "}
                                   <br />
                                   <Link
-                                    href={"/services/web-development"}
+                                    href={"/services/ui-ux-design"}
                                     onClick={() => setOpen(false)}
                                   >
                                     UI/UX Design
@@ -150,6 +167,17 @@ export default function Navbar() {
                               </AccordionContent>
                             </AccordionItem>
                           </Accordion>
+                          {/* <DropdownMenu>
+                            <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+                            <DropdownMenuContent>
+                              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                              <DropdownMenuSeparator />
+                              <DropdownMenuItem>Profile</DropdownMenuItem>
+                              <DropdownMenuItem>Billing</DropdownMenuItem>
+                              <DropdownMenuItem>Team</DropdownMenuItem>
+                              <DropdownMenuItem>Subscription</DropdownMenuItem>
+                            </DropdownMenuContent>
+                          </DropdownMenu> */}
                         </NavigationMenuItem>
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/careers" legacyBehavior passHref>
