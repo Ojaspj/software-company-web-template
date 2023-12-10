@@ -27,7 +27,9 @@ const formSchema = z.object({
     .string({
       required_error: "Your full name is required.",
     })
-    .min(2)
+    .min(2 , {
+      message: "Name must be at least 2 characters.", 
+    })
     .max(50),
   email: z
     .string({
