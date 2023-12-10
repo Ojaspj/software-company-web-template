@@ -2,13 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -19,43 +12,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
-import { SheetClose } from "./ui/sheet";
-import { useEffect, useRef, useState } from "react";
-
-export const components: { title: string; href: string; description: string; routes:string }[] = [
-  {
-    title: "Web Development",
-    routes: "web-development",
-    href: "/services/web-development",
-    description:
-      "Elevate Your Online Presence with Silicontech Nepal's Expert Web Development Service",
-  },
-  {
-    title: "Mobile App Development",
-    href: "/services/mobile-app-development",
-    routes: "mobile-app-development",
-    description:
-      "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
-  },
-  {
-    title: "Ecommerce Solutions",
-    href: "/services/ecommerce-solutions",
-    routes: "ecommerce-solutions",
-    
-    description:
-      "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
-  },
-  {
-    title: "UI/UX Design",
-    href: "/services/ui-ux-design",
-    routes: "ui-ux-design",
-
-    description:
-      "Drive Success with Silicontech Nepal's Dynamic Digital Marketing Services",
-  },
-];
+import { components } from "@/lib/service-data";
 
 export function NavMenu() {
   const path = usePathname();
@@ -147,7 +105,6 @@ export function NavMenu() {
   );
 }
 
-
 // export function MobNavMenu({setNav} : any ) {
 //   return (
 //     <NavigationMenu className="block md:hidden ">
@@ -223,7 +180,9 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-lg tracking-tight font-light  leading-none ">{title}</div>
+          <div className="text-lg tracking-tight font-light  leading-none ">
+            {title}
+          </div>
           <p className="line-clamp-2 text-sm leading-tight text-gray-500">
             {children}
           </p>
