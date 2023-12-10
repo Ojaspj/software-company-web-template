@@ -50,7 +50,7 @@ export default function Main() {
                 variant={"link"}
                 className="  ring-2 ring-[#344A80] hover:bg-[#344A80] hover:text-white  font-semibold tracking-tight text-xl my-4 text-[#344A80] hover:no-underline cursor-pointer"
               >
-                <Link href="/contact">BUILD WITH US</Link>
+                <Link href="/contact">GET STARTED</Link>
               </Button>
             </div>
           </div>

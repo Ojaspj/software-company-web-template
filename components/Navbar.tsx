@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Wrapper from "./Wrapper";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, MoveRight, X } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import {
@@ -64,10 +64,14 @@ export default function Navbar() {
 
           {/* build  button */}
           <div className="hidden md:block">
-            <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-auto rounded-none ">
-              <Link href="/contact">Build With Us </Link>
+            <Button
+              variant={"link"}
+              className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
+            >
+              BUILD WITH US
             </Button>
           </div>
+
           {/* mobile menu  */}
 
           <div className="block md:hidden ">
@@ -174,8 +178,11 @@ export default function Navbar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/contact" legacyBehavior passHref>
-                            <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-56 my-4 rounded-none ">
-                              Build With Us
+                            <Button
+                              variant={"link"}
+                              className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
+                            >
+                              BUILD WITH US
                             </Button>
                           </Link>
                         </NavigationMenuItem>
