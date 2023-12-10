@@ -38,7 +38,18 @@ export function NavMenu() {
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem
+          className={`
+        ${
+          path === "/services/web-development" ||
+          "/services/mobile-app-development" ||
+          "/services/ui-ux-design" ||
+          "/services/ecommerce-solutions"
+            ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
+            : null
+        }
+         `}
+        >
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent className="">
             <ul className="grid w-[400px] gap-3 p-4  md:w-[500px] md:grid-cols-2 lg:w-[700px] ">
@@ -104,66 +115,6 @@ export function NavMenu() {
     </NavigationMenu>
   );
 }
-
-// export function MobNavMenu({setNav} : any ) {
-//   return (
-//     <NavigationMenu className="block md:hidden ">
-//       <NavigationMenuList className="flex flex-col w-full  gap-3">
-//         <NavigationMenuItem>
-//           <Link href="/" legacyBehavior passHref>
-//             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-//               Home
-//             </NavigationMenuLink>
-//           </Link>
-//         </NavigationMenuItem>
-
-//         <NavigationMenuItem>
-//           <Accordion type="single" collapsible>
-//             <AccordionItem value="item-1">
-//               <AccordionTrigger>Service</AccordionTrigger>
-//               <AccordionContent>
-//                 <div className="ml-6 mt-2 flex flex-col -space-y-3 text-gray-500">
-//                   <Link href={"/services/web-development"}  >Web Development</Link> <br />
-//                   <Link href={"/services/web-development"}>Mobile App Development</Link> <br />
-//                   <Link href={"/services/web-development"}>Ecommerce Solutions</Link> <br />
-//                   <Link href={"/services/web-development"}>UI/UX Design</Link>
-//                 </div>
-//               </AccordionContent>
-//             </AccordionItem>
-//           </Accordion>
-//         </NavigationMenuItem>
-//         <NavigationMenuItem>
-//           <Link href="/careers" legacyBehavior passHref>
-//             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-//               Join
-//             </NavigationMenuLink>
-//           </Link>
-//         </NavigationMenuItem>
-//         <NavigationMenuItem>
-//           <Link href="/blog" legacyBehavior passHref>
-//             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-//               Blogs
-//             </NavigationMenuLink>
-//           </Link>
-//         </NavigationMenuItem>
-//         <NavigationMenuItem>
-//           <Link href="/about" legacyBehavior passHref>
-//             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-//               About
-//             </NavigationMenuLink>
-//           </Link>
-//         </NavigationMenuItem>
-//         <NavigationMenuItem>
-//           <Link href="/contact" legacyBehavior passHref>
-//             <Button className="bg-[#344A80] hover:bg-[#213872] text-white h-14 w-56 my-4 rounded-none ">
-//               Build With Us
-//             </Button>
-//           </Link>
-//         </NavigationMenuItem>
-//       </NavigationMenuList>
-//     </NavigationMenu>
-//   );
-// }
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
