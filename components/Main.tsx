@@ -34,7 +34,7 @@ export default function Main() {
         {/* front banner  */}
         <div className="flex w-full h-auto ">
           {/* left part  */}
-          <div className="flex flex-col  my-28 md:justify-center w-full  md:w-1/2 h-full ">
+          <div className="flex flex-col  mt-28 mb-60 md:justify-center w-full  md:w-1/2 h-full ">
             <div>
               <h1 className="  text-4xl font-serif font-bold tracking-tight lg:text-7xl">
                 Bringing your{" "}
@@ -75,7 +75,7 @@ export default function Main() {
             <br className="hidden md:flex" /> build their products and launch
             faster.
           </h2>
-          <div className="flex flex-wrap gap-20 mt-8 border w-[800px] h-[300px] justify-center items-center">
+          <div className="flex flex-wrap gap-20 mt-8 border w-full md:w-[800px] h-[300px] justify-center items-center">
             <h1 className="font-light text-gray-500  text-lg">logos here</h1>
           </div>
         </div>
