@@ -38,7 +38,18 @@ export function NavMenu() {
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem
+          className={`
+        ${
+          path === "/services/web-development" ||
+          "/services/mobile-app-development" ||
+          "/services/ui-ux-design" ||
+          "/services/ecommerce-solutions"
+            ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
+            : null
+        }
+         `}
+        >
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent className="">
             <ul className="grid w-[400px] gap-3 p-4  md:w-[500px] md:grid-cols-2 lg:w-[700px] ">
@@ -104,8 +115,6 @@ export function NavMenu() {
     </NavigationMenu>
   );
 }
-
-
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

@@ -1,18 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 import Wrapper from "./Wrapper";
 import { Button } from "./ui/button";
-import { Menu, MoveRight, X } from "lucide-react";
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -33,7 +25,6 @@ export default function Navbar() {
   const [shadow, setShadow] = useState(false);
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  // console.log(open)
 
   //get shadow while scroll
   useEffect(() => {
@@ -128,7 +119,7 @@ export default function Navbar() {
                             type="single"
 
                             collapsible
-                            className=" w-[205px]"
+                            className=" w-[200px]"
                           >
                             <AccordionItem value="item-1">
                               <AccordionTrigger className="text-lg text-gray-500 tracking-tight  font-light ">
@@ -167,17 +158,7 @@ export default function Navbar() {
                               </AccordionContent>
                             </AccordionItem>
                           </Accordion>
-                          {/* <DropdownMenu>
-                            <DropdownMenuTrigger>Open</DropdownMenuTrigger>
-                            <DropdownMenuContent>
-                              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                              <DropdownMenuSeparator />
-                              <DropdownMenuItem>Profile</DropdownMenuItem>
-                              <DropdownMenuItem>Billing</DropdownMenuItem>
-                              <DropdownMenuItem>Team</DropdownMenuItem>
-                              <DropdownMenuItem>Subscription</DropdownMenuItem>
-                            </DropdownMenuContent>
-                          </DropdownMenu> */}
+                          
                         </NavigationMenuItem>
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/careers" legacyBehavior passHref>
@@ -206,11 +187,11 @@ export default function Navbar() {
                             </NavigationMenuLink>
                           </Link>
                         </NavigationMenuItem>
-                        <NavigationMenuItem onClick={() => setOpen(false)}>
+                        <NavigationMenuItem className=" w-56" onClick={() => setOpen(false)}>
                           <Link href="/contact" legacyBehavior passHref>
                             <Button
                               variant={"link"}
-                              className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
+                              className=" w-full border p-3 h-full transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-lg my-4 hover:no-underline cursor-pointer"
                             >
                               BUILD WITH US
                             </Button>
