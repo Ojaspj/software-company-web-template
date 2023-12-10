@@ -96,6 +96,21 @@ export function NavMenu() {
         <NavigationMenuItem
           className={` 
         ${
+          path.startsWith("/course")
+            ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
+            : null
+        }
+         `}
+        >
+          <Link href="/course" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Course
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem
+          className={` 
+        ${
           path.startsWith("/about")
             ? " border-b text-lg bg-accent border-[#344A80] text-[#344A80]  "
             : null
