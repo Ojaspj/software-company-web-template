@@ -11,6 +11,12 @@ import {
   FaInstagram,
   FaPinterest,
 } from "react-icons/fa";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
@@ -136,6 +142,40 @@ export default function Page({ params }: { params: { slug: string } }) {
                               </p>
                             </div>
                           </div>
+                        </div>
+                      </TabsContent>
+                      <TabsContent value="faq">
+                        <div className="flex  flex-col w-[335px] md:w-[860px]  h-auto gap-14 md:gap-6">
+                          <Accordion
+                            type="single"
+                            collapsible
+                            className="md:w-full flex flex-col gap-2"
+                          >
+                            <AccordionItem value="item-1" className="border p-2 ">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it accessible?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It adheres to the WAI-ARIA design pattern.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-2" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900" >Is it styled?</AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It comes with default styles that matches
+                                the other components&apos; aesthetic.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-3" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it animated?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It&apos;s animated by default, but you can
+                                disable it if you prefer.
+                              </AccordionContent>
+                            </AccordionItem>
+                          </Accordion>
                         </div>
                       </TabsContent>
                     </div>
