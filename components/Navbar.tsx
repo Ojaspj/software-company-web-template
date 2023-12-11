@@ -122,7 +122,7 @@ export default function Navbar() {
                             className=" w-[200px]"
                           >
                             <AccordionItem value="item-1">
-                              <AccordionTrigger className="text-lg text-gray-500 tracking-tight  font-light ">
+                              <AccordionTrigger className="text-lg text-gray-500 tracking-tight outline-none  font-light ">
                                 Service
                               </AccordionTrigger>
                               <AccordionContent>

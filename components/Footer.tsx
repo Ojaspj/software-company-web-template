@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="w-full h-[70vh]">
           {/* subscribe  */}
 
-          <div className="flex flex-col md:flex-row md:w-full gap-4 md:items-center md:justify-between h-auto md:h-32 p-8">
+          <div className="flex flex-col md:flex-row md:w-full gap-4 md:items-center md:justify-between h-auto md:h-32 py-4 md:p-8">
             <h1 className=" text-2xl font-bold text-[#213872] tracking-tighter">
               Stay updated <br />
               <span className="font-light text-lg">
@@ -25,7 +25,7 @@ export default function Footer() {
               <Input
                 type="text"
                 placeholder="Email"
-                className=" w-72 border rounded-md h-10 border-gray-200"
+                className=" w-72 border  rounded-md h-10 border-gray-200"
               />
               <Button
                 variant={"link"}
@@ -37,17 +37,17 @@ export default function Footer() {
           </div>
           <Separator />
 
-          <div className="w-full flex flex-wrap justify-between py-8">
+          <div className="w-full flex flex-wrap justify-between py-8 mb-4">
             <div className=" h-auto w-auto">
               <img
-                className="h-20 w-auto"
+                className="h-20 w-auto -ml-6 md:-ml-0"
                 src="https://silicontechnepal.com.np/static/media/silicontech-transparent.69d53de28e59ff4b6157.png"
                 alt="logo"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-4 md:mt-0">
               <div className="flex flex-col justify-center md:flex-row w-full md:w-[1010px] md:justify-between  border-green-500 ">
-                <div className="flex flex-col h-[300px] w-56  p-8 space-y-4  ">
+                <div className="flex flex-col h-[300px] w-56  md:p-8 space-y-4  ">
                   <h1 className=" text-2xl font-bold text-gray-700 tracking-tighter">
                     Company
                   </h1>
@@ -66,7 +66,7 @@ export default function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className="flex flex-col h-[300px] w-70  p-8 space-y-4  ">
+                <div className="flex flex-col h-[300px] w-70  md:p-8 space-y-4  ">
                   <h1 className=" text-2xl font-bold text-gray-700 tracking-tighter">
                     What We Do
                   </h1>
@@ -85,7 +85,7 @@ export default function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className="flex flex-col h-[300px] w-56  p-8 space-y-4  ">
+                <div className="flex flex-col h-[300px] w-56  md:p-8 space-y-4  ">
                   <h1 className=" text-2xl font-bold text-gray-700 tracking-tighter">
                     Connect
                   </h1>
