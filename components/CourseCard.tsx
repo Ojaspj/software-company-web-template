@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { BookText, Star, User } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface CourseCardProps {
   name: string;
@@ -13,6 +15,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   category,
   overview,
 }) => {
+  const router = useRouter();
   return (
     <Card className="w-[285px]  md:w-[289px] h-96 relative cursor-pointer">
       <div className="absolute top-[140px] right-5 h-[68px] w-[68px] rounded-full bg-[#344A80] text-white flex justify-center items-center font-semibold text-sm">
@@ -25,10 +28,15 @@ const CourseCard: React.FC<CourseCardProps> = ({
         />
         <div className="p-4">
           <p className="text-sm font-light text-gray-500 mb-2">{category}</p>
-          <h3 className="text-lg font-semibold mb-2 h-14 border whitespace-normal ">{name}</h3>
+          <h3
+            className="text-lg font-semibold mb-2 h-14 hover:text-[#344A80]  whitespace-normal"
+            onClick={() => router.push(`/course/${name.toLowerCase().replace(/\s/g, "-")}`)}
+          >
+            {name}
+          </h3>
           <div className="flex items-center h-10 w-full justify-between text-sm font-light ">
             <div className="flex">
-              <Star strokeWidth={1}  />
+              <Star strokeWidth={1} />
               <Star strokeWidth={1} />
               <Star strokeWidth={1} />
               <Star strokeWidth={1} />
