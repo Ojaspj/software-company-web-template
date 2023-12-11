@@ -13,9 +13,9 @@ export default function Page({ params }: { params: { slug: string } }) {
         <div className="w-full h-auto ">
           {courses.map((item) =>
             params.slug.replace(/-/g, " ") === item.name.toLowerCase() ? (
-              <div className="flex flex-col md:flex-row gap-8 w-full md:p-8 py-12 border h-full">
+              <div className="flex flex-col md:flex-row gap-8 w-full md:p-8 py-12  h-full">
                 {/* left part  */}
-                <div className="flex flex-col w-full md:w-[70%] border h-full ">
+                <div className="flex flex-col w-full md:w-[70%]  h-full ">
                   <h1 className="font-serif text-3xl md:text-4xl font-bold text-[#344A80] ">
                     {item.name}
                   </h1>
@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <TabsTrigger value="reviews">Reviews</TabsTrigger>
                       <TabsTrigger value="faq">Faqs</TabsTrigger>
                     </TabsList>
-                    <div className="my-4 md:my-8 flex h-full w-full">
+                    <div className="my-4 md:my-4 flex h-full w-full">
                       <TabsContent value="overview">
                         <div className="w-full h-auto">
                           <div>
@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffarwell-consultants.com%2Fwp-content%2Fuploads%2F2018%2F09%2Felearning-header-1500x630.png&f=1&nofb=1&ipt=2ba33efcf34f49387fcd13ab0244ea6ca8286f029c91259aa6cea8b4c666d8f9&ipo=images"
                             />
                           </div>
-                          <div className="my-4 border h-auto w-full ">
+                          <div className="my-4  h-auto w-full ">
                             <p className="text-md md:text-lg font-light mt-4 ">
                               {item.overview}
                             </p>
