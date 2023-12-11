@@ -26,7 +26,7 @@ export default function Careers() {
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
-        <div className="w-full h-auto  p-8 ">
+        <div className="w-full h-auto  md:p-8  pt-20 ">
           <div className="flex h-screen md:h-[77vh] ">
             <div className="w-full  flex flex-col md:items-center md:justify-center">
               <h1 className="text-left md:text-center text-lg md:text-xl tracking-tighter text-gray-600 font-bold">

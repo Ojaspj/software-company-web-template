@@ -1,4 +1,3 @@
-// CourseList.tsx
 
 import React from 'react';
 import CourseCard from './CourseCard';
@@ -16,7 +15,7 @@ interface CourseListProps {
 
 const CourseList: React.FC<CourseListProps> = ({ courses }) => {
   return (
-    <div className='flex flex-wrap p-3 gap-4'>
+    <div className='  h-auto flex flex-wrap p-0  md:p-3  gap-4 md:w-auto justify-center md:justify-normal'>
       {courses.map((course, index) => (
         <CourseCard key={index} {...course} />
       ))}
