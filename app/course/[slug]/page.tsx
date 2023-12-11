@@ -1,3 +1,4 @@
+"use client";
 import Wrapper from "@/components/Wrapper";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -11,8 +12,16 @@ import {
   FaInstagram,
   FaPinterest,
 } from "react-icons/fa";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { useRouter } from "next/navigation";
 
 export default function Page({ params }: { params: { slug: string } }) {
+    const router = useRouter();
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
@@ -138,6 +147,74 @@ export default function Page({ params }: { params: { slug: string } }) {
                           </div>
                         </div>
                       </TabsContent>
+                      <TabsContent value="faq">
+                        <div className="flex  flex-col w-[335px] md:w-[860px]  h-auto gap-14 md:gap-6">
+                          <Accordion
+                            type="single"
+                            collapsible
+                            className="md:w-full flex flex-col gap-2"
+                          >
+                            <AccordionItem value="item-1" className="border p-2 ">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it accessible?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It adheres to the WAI-ARIA design pattern.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-2" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900" >Is it styled?</AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It comes with default styles that matches
+                                the other components&apos; aesthetic.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-3" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it animated?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It&apos;s animated by default, but you can
+                                disable it if you prefer.
+                              </AccordionContent>
+                            </AccordionItem>
+                          </Accordion>
+                        </div>
+                      </TabsContent>
+                      <TabsContent value="reviews">
+                        <div className="flex  flex-col w-[335px] md:w-[860px]  h-auto gap-14 md:gap-6">
+                          <Accordion
+                            type="single"
+                            collapsible
+                            className="md:w-full flex flex-col gap-2"
+                          >
+                            <AccordionItem value="item-1" className="border p-2 ">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it accessible?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It adheres to the WAI-ARIA design pattern.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-2" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900" >Is it styled?</AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It comes with default styles that matches
+                                the other components&apos; aesthetic.
+                              </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-3" className="border p-2">
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it animated?
+                              </AccordionTrigger>
+                              <AccordionContent className="px-4">
+                                Yes. It&apos;s animated by default, but you can
+                                disable it if you prefer.
+                              </AccordionContent>
+                            </AccordionItem>
+                          </Accordion>
+                        </div>
+                      </TabsContent>
                     </div>
                   </Tabs>
                 </div>
@@ -198,7 +275,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <Users className="text-[#344A80]" />
                     </div>
                     <Separator />
-                    <Button className="w-full h-10 bg-[#344A80] text-white font-semibold rounded-none text-lg mt-6 p-4">
+                    <Button onClick={() => router.push('/checkout')} className="w-full h-10 bg-[#344A80] text-white font-semibold rounded-none text-lg mt-6 p-4">
                       Buy This Course
                     </Button>
                     <Button
