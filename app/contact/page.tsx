@@ -149,7 +149,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="eg. Ram Bdr Thapa" {...field} />
+                        <Input placeholder="eg. Ram Bdr Thapa"  {...field} />
                       </FormControl>
 
                       <FormMessage />
