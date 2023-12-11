@@ -49,7 +49,7 @@ export default function About() {
   return (
     <div className="w-full min-h-screen h-auto">
       <Wrapper>
-        <div className="w-[70%] h-auto md:h-[30vh] p-8 py-12">
+        <div className="w-[70%] h-auto md:h-[30vh] md:p-8 py-12">
           <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">
             BLOG
           </h1>

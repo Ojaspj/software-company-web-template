@@ -37,7 +37,7 @@ export default function Course() {
     <div className="md:w-full min-h-screen ">
       <Wrapper>
         <div className="w-full h-auto ">
-          <div className="w-auto h-auto p-8 py-12">
+          <div className="w-auto h-auto md:p-8 py-12">
             <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">
               COURSES
             </h1>
