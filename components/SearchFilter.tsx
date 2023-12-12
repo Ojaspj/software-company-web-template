@@ -34,7 +34,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
     <div className=" flex flex-col md:flex-row h-auto md:h-10 items-center mb-4 gap-4 w-full ">
       <select
         onChange={handleFilterChange}
-        className=" rounded-none p-2 w-full md:w-[300px] md:px-4 h-full cursor-pointer border border-black text-md font-light focus-visible:outline-none "
+        className=" rounded-none  w-full md:w-[300px] md:px-4 h-10 cursor-pointer border border-black text-md font-light focus-visible:outline-none "
       >
         <option value="">All Categories</option>
         <option value="programming">Programming</option>
