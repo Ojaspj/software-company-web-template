@@ -36,15 +36,15 @@ const formSchema = z.object({
       required_error: "Your email address is required.",
     })
     .email("Please enter a valid email address."),
-  phone: z
+  subject: z
     .string({
-      required_error: "Please enter 10 digit phone number.",
+      required_error: "Please enter subject for message.",
     })
     .min(10, {
-      message: "Phone number must be at least 10 characters.",
+      message: "Subject must be at least 10 characters.",
     })
-    .max(10, {
-      message: "Phone number must not be longer than 10 characters.",
+    .max(50, {
+      message: "Subject must not be longer than 10 characters.",
     }),
   message: z
     .string({
@@ -135,7 +135,7 @@ export default function Contact() {
                   />
                   <FormField
                     control={form.control}
-                    name="phone"
+                    name="subject"
                     render={({ field }) => (
                       <FormItem>
                         <FormControl>
