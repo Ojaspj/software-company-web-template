@@ -5,6 +5,8 @@ import Lottie from "lottie-react";
 import hero from "../public/hero.json";
 import { Button } from "./ui/button";
 import Services from "./Services";
+import { courses } from "@/lib/courses-data";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   ReactIcon,
@@ -143,9 +145,20 @@ export default function Main() {
       </Wrapper>
       <CourseBanner />
       <Wrapper>
-        <div className="w-full h-auto">
-          <CourseCard name={"asd"} category={"asdf"} overview={"asdf"} />
-
+        <div className="w-full h-auto my-20 ">
+          <div>
+            <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
+              Top Courses
+            </h1>
+            <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+              We offer a variety of courses to help you get started.
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-8 justify-center my-12">
+            {courses.slice(0, 3).map((course, index) => (
+              <CourseCard key={index} {...course} />
+            ))}
+          </div>
         </div>
       </Wrapper>
     </div>

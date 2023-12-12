@@ -1,5 +1,4 @@
 "use client";
-import { CourseBanner } from "@/components/CourseBanner";
 import CourseList from "@/components/CourseList";
 import SearchFilter from "@/components/SearchFilter";
 import Wrapper from "@/components/Wrapper";

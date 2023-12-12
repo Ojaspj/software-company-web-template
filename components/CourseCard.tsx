@@ -17,13 +17,13 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Card className="w-full  md:w-[289px] h-96 relative cursor-pointer">
+    <Card className=" rounded-none w-full  md:w-[289px] h-96 relative cursor-pointer shadow-lg border-none">
       <div className="absolute top-[140px] right-5 h-[68px] w-[68px] rounded-full bg-[#344A80] text-white flex justify-center items-center font-semibold text-sm">
         Rs. 9999
       </div>
       <CardContent className=" p-0 h-1/2 ">
         <img
-          className="rounded-t-md w-full md:w-auto h-44"
+          className="w-full md:w-auto h-44"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ferasmuscoursescroatia.com%2Fwp-content%2Fuploads%2F2019%2F12%2FOnline-courses.jpg&f=1&nofb=1&ipt=cae12cab96964e93bb7f2bb5b3bed70905e6cf1f5433cb929f7ec92f8ac0940e&ipo=images"
         />
         <div className="p-4">
