@@ -31,34 +31,27 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
   };
 
   return (
-    <div className=" flex flex-col md:flex-row h-auto md:h-10 items-center   mb-4 gap-4 w-full ">
-      <div className="  md:w-[500px]">
-        <Input
-          type="text"
-          placeholder="Search by course name"
-          value={searchTerm}
-          onChange={handleSearchChange}
-          className="h-10"
-        />
-      </div>
-      <div className="flex md:flex-row gap-4 items-center">
-        <select
-          onChange={handleFilterChange}
-          className=" rounded-md p-2 md:px-4 h-full cursor-pointer border border-black text-md font-light focus-visible:outline-none "
-        >
-          <option value="">All Categories</option>
-          <option value="programming">Programming</option>
-          <option value="tech">Tech</option>
-          <option value="photography">Photography</option>
-          <option value="science">Science</option>
-        </select>
-        <Button
-          onClick={() => onSearch(searchTerm)}
-          className="bg-[#344A80] hover:bg-[#213872] text-white font-bold text-md h-full   w-auto md:my-4 rounded transition-transform hover:scale-105 "
-        >
-          SEARCH COURSE
-        </Button>
-      </div>
+    <div className=" flex flex-col md:flex-row h-auto md:h-10 items-center mb-4 gap-4 w-full ">
+      <select
+        onChange={handleFilterChange}
+        className=" rounded-none p-2 w-full md:w-[300px] md:px-4 h-full cursor-pointer border border-black text-md font-light focus-visible:outline-none "
+      >
+        <option value="">All Categories</option>
+        <option value="programming">Programming</option>
+        <option value="tech">Tech</option>
+        <option value="photography">Photography</option>
+        <option value="science">Science</option>
+      </select>
+      <Input
+        type="text"
+        placeholder="Enter keywords here"
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="h-10 w-full md:w-[700px] rounded-none"
+      />
+      <Button className="rounded-none w-full md:w-72 bg-[#344A80] text-white p-1">
+        SEARCH COURSE
+      </Button>
     </div>
   );
 };
