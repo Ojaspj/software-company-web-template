@@ -144,7 +144,7 @@ export default function Main() {
           </Tabs>
         </div>
       </Wrapper>
-      {/* <CourseBanner /> */}
+      <CourseBanner />
       <Wrapper>
         <div className="w-full h-auto my-20 ">
           <div>
@@ -166,7 +166,7 @@ export default function Main() {
           <div className="flex flex-col justify-center items-center ">
             <div className="">
               <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
-                Client's Saying
+                Client Reviews
               </h1>
               <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
                 We have worked with many clients.

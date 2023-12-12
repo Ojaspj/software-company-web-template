@@ -12,7 +12,7 @@ export class ClientsReviewSlider extends Component {
           showStatus={false}
           showThumbs={false}
           showIndicators={true}
-          autoPlay={false}
+          autoPlay={true}
           className="relative w-full  md:w-[800px] h-auto "
         >
           <div className=" w-full h-full flex flex-col  md:flex-row gap-2 py-4 ">
