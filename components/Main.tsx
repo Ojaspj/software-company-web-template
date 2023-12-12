@@ -30,6 +30,7 @@ import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import { CourseBanner } from "./CourseBanner";
 import CourseCard from "./CourseCard";
+import { ClientsReviewSlider } from "./ClientsReviewSlider";
 
 export default function Main() {
   return (
@@ -143,7 +144,7 @@ export default function Main() {
           </Tabs>
         </div>
       </Wrapper>
-      <CourseBanner />
+      {/* <CourseBanner /> */}
       <Wrapper>
         <div className="w-full h-auto my-20 ">
           <div>
@@ -158,6 +159,25 @@ export default function Main() {
             {courses.slice(0, 3).map((course, index) => (
               <CourseCard key={index} {...course} />
             ))}
+          </div>
+        </div>
+        {/* clients  */}
+        <div className="  w-full h-auto my-20 bg-accent py-12 rounded-xl ">
+          <div className="flex flex-col justify-center items-center ">
+            <div className="">
+              <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
+                Client's Saying
+              </h1>
+              <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+                We have worked with many clients.
+              </h2>
+            </div>
+            <div className="flex justify-center my-8 ">
+
+            <ClientsReviewSlider />
+            </div>
+
+            
           </div>
         </div>
       </Wrapper>
