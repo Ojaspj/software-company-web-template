@@ -5,6 +5,7 @@ import Wrapper from "@/components/Wrapper";
 import { courses } from "@/lib/courses-data";
 import React, { useState } from "react";
 
+
 export default function Course() {
   const [filteredCategory, setFilteredCategory] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
