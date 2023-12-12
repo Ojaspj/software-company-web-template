@@ -7,12 +7,12 @@ export default function page() {
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
-        <div className="w-full h-auto ">
+        <div className="w-full h-auto">
           <div className="w-full flex flex-col justify-center items-center py-12">
             <h1 className="text-5xl text-center font-bold font-serif">Course Checkout</h1>
-            <div className="flex flex-col justify-center md:flex-row w-full h-auto mt-8  gap-8 ">
+            <div className="flex flex-col justify-center md:flex-row w-full h-auto mt-8 gap-8">
                 {/* left part  */}
-              <div className="flex flex-col gap-4 w-full md:w-[35%]  h-full  ">
+              <div className="flex flex-col gap-4 w-full md:w-[35%]  h-full">
                 {/* login  */}
                 <div className="flex flex-col gap-4 w-full h-auto  md:p-8 md:shadow-xl md:mt-6">
                   <h1 className="font-bold text-3xl">Login</h1>
@@ -43,7 +43,7 @@ export default function page() {
                 </div>
               </div>
               {/* register  */}
-              <div className="w-full md:w-[50%] h-auto ">
+              <div className="w-full md:w-[50%] h-auto">
                 <div className="flex flex-col gap-4 md:p-8 md:shadow-xl">
                   <h1 className="font-bold text-3xl">Register</h1>
                   <div>
