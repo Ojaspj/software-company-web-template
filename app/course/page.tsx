@@ -1,9 +1,11 @@
 "use client";
+import { CourseBanner } from "@/components/CourseBanner";
 import CourseList from "@/components/CourseList";
 import SearchFilter from "@/components/SearchFilter";
 import Wrapper from "@/components/Wrapper";
 import { courses } from "@/lib/courses-data";
 import React, { useState } from "react";
+
 
 export default function Course() {
   const [filteredCategory, setFilteredCategory] = useState<string>("");

@@ -26,6 +26,8 @@ import {
 import Link from "next/link";
 import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
+import { CourseBanner } from "./CourseBanner";
+import CourseCard from "./CourseCard";
 
 export default function Main() {
   return (
@@ -138,7 +140,13 @@ export default function Main() {
             </div>
           </Tabs>
         </div>
-        {/* footer  */}
+      </Wrapper>
+      <CourseBanner />
+      <Wrapper>
+        <div className="w-full h-auto">
+          <CourseCard name={"asd"} category={"asdf"} overview={"asdf"} />
+
+        </div>
       </Wrapper>
     </div>
   );
