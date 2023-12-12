@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`sticky top-0 z-10 bg-white w-full h-24  flex items-center ${
+      className={`sticky top-0 z-20 bg-white w-full h-24  flex items-center ${
         shadow ? "shadow-md" : null
       }`}
     >
