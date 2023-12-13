@@ -1,28 +1,15 @@
+"use client";
 import Wrapper from "@/components/Wrapper";
 import { Button } from "@/components/ui/button";
+import { jobData } from "@/lib/job-data";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-const jobData = [
-  {
-    post: "Senior Full Stack Developer",
-    location: "Remote",
-  },
-  {
-    post: "Senior Frontend Developer",
-    location: "Remote",
-  },
-  {
-    post: "Mobile App Developer",
-    location: "Remote",
-  },
-  {
-    post: "Mobile App Developer",
-    location: "Remote",
-  },
-];
+
 
 export default function Careers() {
+  const router = useRouter();
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
@@ -35,15 +22,17 @@ export default function Careers() {
               <h1 className=" text-left md:text-center mt-4 text-4xl font-serif font-bold tracking-tight lg:text-7xl">
                 Unlock your{" "}
                 <span className="text-[#344A80] font-semibold">potential,</span>{" "}
-                <br /> Building tomorrow's tech <br className="hidden md:block" /> with us.
+                <br /> Building tomorrow's tech{" "}
+                <br className="hidden md:block" /> with us.
               </h1>
               <h2 className=" text-gray-500 font-light my-4 text-md md:text-xl md:text-center">
                 Explore careers in software development at{" "}
                 <span className="text-[#344A80] font-semibold">
                   Silicon Tech
                 </span>{" "}
-                , where innovation meets ambition. <br className="hidded md:block" /> Join a dynamic team,
-                shape cutting-edge projects, and code your future with purpose."
+                , where innovation meets ambition.{" "}
+                <br className="hidded md:block" /> Join a dynamic team, shape
+                cutting-edge projects, and code your future with purpose."
               </h2>
               <div>
                 <Button
@@ -80,7 +69,10 @@ export default function Careers() {
                   </div>
                 )}
                 {jobData.map((job) => (
-                  <div className="flex flex-col md:flex-row md:justify-between  md:items-center w-auto md:w-full h-auto p-2 border-b my-4 border cursor-pointer hover:border-[#344A80] rounded md:p-4 ">
+                  <div
+                    onClick={() => router.push(`/careers/${job.post.toLowerCase().replace(/\s/g, "-")}`)}
+                    className="flex flex-col md:flex-row md:justify-between  md:items-center w-auto md:w-full h-auto p-2  my-4 border-2 cursor-pointer hover:border-[#344A80] rounded md:p-4 "
+                  >
                     <div className="md:w-1/2 h-full ">
                       <h1 className="text-2xl text-gray-700 font-semibold tracking-tight">
                         {job.post}

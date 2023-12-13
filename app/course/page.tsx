@@ -5,7 +5,6 @@ import Wrapper from "@/components/Wrapper";
 import { courses } from "@/lib/courses-data";
 import React, { useState } from "react";
 
-
 export default function Course() {
   const [filteredCategory, setFilteredCategory] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -35,21 +34,19 @@ export default function Course() {
   return (
     <div className="md:w-full min-h-screen relative ">
       {/* banner  */}
-      <div className="w-full h-[90vh] md:h-[30vh] mb-12">
+      <div className="w-full h-[80vh] md:h-[30vh] mb-12">
         <img
           className="w-full h-full "
           src="https://as2.ftcdn.net/v2/jpg/05/57/68/21/1000_F_557682138_AUkbntsXXtcicfZi6UI4VVzlNkonOTli.jpg"
           alt=""
         />
-        <div className="absolute w-full h-[90vh] md:h-[30vh]  bg-black/20 top-0"></div>
-        <Wrapper>
-          <div className="  text-center  absolute  md:text-left top-52 md:top-0 p-8 text-white font-bold ">
-            <h1 className=" text-xl md:text-lg tracking-tighter">START WITH</h1>
-            <h1 className=" mt-4 text-5xl md:text-4xl font-serif tracking-tight lg:text-5xl">
-              Professional Online <br /> Courses For Achievers
-            </h1>
-          </div>
-        </Wrapper>
+        <div className="absolute w-full h-[80vh] md:h-[30vh]  bg-black/20 top-0"></div>
+        <div className="  text-center  absolute w-full border  md:text-left top-44 md:top-0 p-0 md:p-8 text-white font-bold ">
+          <h1 className=" text-xl md:text-lg tracking-tighter">START WITH</h1>
+          <h1 className=" mt-4 text-5xl md:text-4xl font-serif tracking-tight lg:text-5xl">
+            Professional Online <br /> Courses For Achievers
+          </h1>
+        </div>
       </div>
       <Wrapper>
         <div className="w-full h-auto">
