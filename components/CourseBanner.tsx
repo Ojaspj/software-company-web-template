@@ -39,8 +39,8 @@ export class CourseBanner extends Component {
           }}
           className="relative"
         >
-          <div className="w-full h-[40vh] md:h-[70vh]  ">
-            <div className="absolute w-full h-[40vh] md:h-[70vh] bg-black/40 top-0"></div>
+          <div className="w-full h-[40vh] lg:h-[60vh]  ">
+            <div className="absolute w-full h-[40vh] lg:h-[60vh] bg-black/40 top-0"></div>
             <div className=" mx-2 md:mx-[100px] text-left absolute top-16 md:top-44  h-auto w-full   md:w-1/2 text-white  ">
               <h1 className=" text-sm md:text-md font-semibold">EDUCATION BENEFITS</h1>
               <h1 className=" text-3xl md:text-5xl font-semibold my-2">
