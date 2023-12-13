@@ -31,6 +31,7 @@ import { Separator } from "./ui/separator";
 import { CourseBanner } from "./CourseBanner";
 import CourseCard from "./CourseCard";
 import { ClientsReviewSlider } from "./ClientsReviewSlider";
+import CourseCategoryBanner from "./CourseCategoryBanner";
 
 export default function Main() {
   return (
@@ -144,6 +145,7 @@ export default function Main() {
           </Tabs>
         </div>
       </Wrapper>
+      <CourseCategoryBanner />
       <CourseBanner />
       <Wrapper>
         <div className="w-full h-auto my-20 ">
