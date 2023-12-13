@@ -11,7 +11,7 @@ export default function Footer() {
     <div>
       <Separator />
       <Wrapper>
-        <div className="w-full h-[70vh]">
+        <div className="w-full h-auto">
           {/* subscribe  */}
 
           <div className="flex flex-col md:flex-row md:w-full gap-4 md:items-center md:justify-between h-auto md:h-32 py-4 md:p-8">
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
           <Separator />
 
-          <div className="w-full flex flex-wrap justify-between py-8 mb-4">
+          <div className="w-full flex flex-wrap justify-between py-8 ">
             <div className=" h-auto w-auto">
               <img
                 className="h-20 w-auto -ml-6 md:-ml-0"
@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
           </div>
           <Separator />
-          <div className="w-full flex flex-col md:flex-row items-center py-4 md:py-0 justify-between md:h-[80px] text-gray-600  font-light text-md tracking-tight">
+          <div className="w-full flex flex-col md:flex-row items-center py-4 lg:py-0 justify-between lg:h-[80px]  text-gray-600  font-light text-md tracking-tight">
             <h1>Copyright 2023, Silicon Tech Nepal Pvt Ltd.</h1>
             <Link href="/" className="hover:text-[#344A80]">
               Privacy Policy

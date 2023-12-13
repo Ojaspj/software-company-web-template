@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function CourseCategoryBanner() {
     const router = useRouter();
   return (
-    <div className="w-full h-auto ">
+    <div className="w-full h-auto my-8 ">
       <Wrapper>
         <div className="w-full h-auto py-8 mb-14">
           <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
@@ -17,13 +17,12 @@ export default function CourseCategoryBanner() {
             education advice on premier colleges or universities.
           </h2>
 
-          <div className="flex flex-wrap gap-4 w-full h-[50vh] py-8 border-2 justify-center">
+          <div className="flex flex-wrap gap-4 w-full h-[50vh] py-8  justify-center">
             <div className="w-[24%] h-full ">
               <div onClick={() => router.push(`/course-category/programming`)} className="w-full h-1/2 relative group mb-4 cursor-pointer">
                 <div className="absolute inset-0 w-full h-full flex items-end justify-center bg-black bg-opacity-50 p-4 opacity-80 group-hover:opacity-100 transition-all">
                   <div className="text-white text-center">
                     <h2 className="text-2xl font-bold mb-2">Development</h2>
-                    <p>Short overview of the card content.</p>
                   </div>
                 </div>
                 <img
@@ -97,7 +96,7 @@ export default function CourseCategoryBanner() {
             </div>
           </div>
         </div>
-        ¥
+        
       </Wrapper>
     </div>
   );
