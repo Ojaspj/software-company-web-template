@@ -17,20 +17,22 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Card className="p-0 rounded-none w-full   md:w-[289px] h-96 relative cursor-pointer shadow-lg border-none">
+    <Card className="p-0 rounded-none w-full lg:w-[330px] h-96 relative cursor-pointer shadow-lg border-none">
       <div className="absolute top-[140px] right-5 h-[68px] w-[68px] rounded-full bg-[#344A80] text-white flex justify-center items-center font-semibold text-sm">
         Rs. 9999
       </div>
       <CardContent className=" p-0 h-1/2 ">
         <img
-          className="w-full md:w-auto h-44"
+          className="w-full lg:w-full h-44"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ferasmuscoursescroatia.com%2Fwp-content%2Fuploads%2F2019%2F12%2FOnline-courses.jpg&f=1&nofb=1&ipt=cae12cab96964e93bb7f2bb5b3bed70905e6cf1f5433cb929f7ec92f8ac0940e&ipo=images"
         />
         <div className="p-4">
           <p className="text-sm font-light text-gray-500 mb-2">{category}</p>
           <h3
             className="text-lg font-semibold mb-2 h-14 hover:text-[#344A80]  whitespace-normal"
-            onClick={() => router.push(`/course/${name.toLowerCase().replace(/\s/g, "-")}`)}
+            onClick={() =>
+              router.push(`/course/${name.toLowerCase().replace(/\s/g, "-")}`)
+            }
           >
             {name}
           </h3>

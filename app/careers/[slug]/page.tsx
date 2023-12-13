@@ -51,9 +51,7 @@ const formSchema = z.object({
   })
 });
 
-{
-  /* <h1>{params.slug.replace(/-/g, " ")}</h1> */
-}
+
 
 export default function Page({ params }: { params: { slug: string } }) {
   const form = useForm<z.infer<typeof formSchema>>({
