@@ -49,7 +49,7 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
         onChange={handleSearchChange}
         className="h-10 w-full md:w-[700px] rounded-none"
       />
-      <Button className="rounded-none w-full md:w-72 bg-[#344A80] text-white p-1">
+      <Button className="rounded-none w-full md:w-72 bg-[#344A80] text-white p-1 text-lg">
         SEARCH COURSE
       </Button>
     </div>

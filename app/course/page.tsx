@@ -58,10 +58,10 @@ export default function Course() {
                 onFilterChange={handleFilterChange}
               />
               <div className="my-4">
-                <h1 className="text-3xl font-bold">
+                <h1 className="text-5xl font-bold">
                   Professional Online Courses
                 </h1>
-                <p className="font-sm font-light">
+                <p className="text-lg mt-2 mb-4 font-light">
                   Offering miscellaneous courses and online programs for fresh
                   university graduates or <br /> college pass outs that want to
                   pursue an aspiring career.

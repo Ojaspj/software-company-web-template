@@ -38,7 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   <h1 className="text-2xl font-bold  mt-10">
                     What we offer ?
                   </h1>
-                  <div className="text-lg md:text-xl font-light p-5 ">
+                  <div className="text-lg lg:text-xl font-light p-5 ">
                     {component.offerings.map((item) => (
                       <ul className=" list-disc my-2">
                         <li className="font-semibold ">
