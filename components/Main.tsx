@@ -90,7 +90,7 @@ export default function Main() {
       <Services />
       {/* tech stack  */}
       <Wrapper>
-        <div className="flex flex-col w-full h-auto  py-14">
+        <div className="flex flex-col w-full h-auto py-20">
           <div>
             <h1 className=" text-4xl lg:text-6xl font-bold  text-center">
               Tech Stack

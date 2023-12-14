@@ -7,11 +7,14 @@ export default function Page({ params }: { params: { slug: string } }) {
     <div className="w-full min">
       <Wrapper>
         <div className=" h-auto w-full lg:p-8 flex flex-col items-center justify-center">
-          <h1 className="font-bold text-4xl my-14 text-center">{params.slug.toUpperCase()} COURSES</h1>
+          <h1 className="font-bold text-4xl my-14 text-left">{params.slug.toUpperCase()} COURSES</h1>
           <div className="  h-auto flex flex-wrap  gap-4 w-full ">
-            {courses.map((course, index) =>
+            {courses.map((course, index) => 
               course.category.toLowerCase() === params.slug ? (
-                <CourseCard key={index} {...course} />
+                <div>
+
+                  <CourseCard key={index} {...course} />
+                </div>
               ) : null
             )}
           </div>
