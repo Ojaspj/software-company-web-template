@@ -21,7 +21,7 @@ import {
 import { useRouter } from "next/navigation";
 
 export default function Page({ params }: { params: { slug: string } }) {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
@@ -54,19 +54,19 @@ export default function Page({ params }: { params: { slug: string } }) {
                               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffarwell-consultants.com%2Fwp-content%2Fuploads%2F2018%2F09%2Felearning-header-1500x630.png&f=1&nofb=1&ipt=2ba33efcf34f49387fcd13ab0244ea6ca8286f029c91259aa6cea8b4c666d8f9&ipo=images"
                             />
                           </div>
-                          <div className="my-4  h-auto w-full ">
+                          <div className="my-4 h-auto w-full ">
                             <p className="text-md lg:text-xl font-light mt-4 text-gray-800 ">
                               {item.overview}
                             </p>
-                            <h1 className="text-3xl font-bold  mt-10">
-                              COURSE DESCRIPTION{" "}
+                            <h1 className="text-2xl font-bold  mt-10">
+                              Course Description{" "}
                             </h1>
 
                             <p className="text-md lg:text-xl font-light mt-4 text-gray-800">
                               {item.description}
                             </p>
-                            <h1 className="text-3xl font-bold  mt-10">
-                              MAIN FEATURES{" "}
+                            <h1 className="text-2xl font-bold  mt-10">
+                              Main Features{" "}
                             </h1>
                             <div className="text-md lg:text-xl font-light mt-4 px-4 text-gray-800 ">
                               <ul>
@@ -75,8 +75,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 ))}
                               </ul>
                             </div>
-                            <h1 className="text-3xl font-bold  mt-10">
-                              WHAT IS THE TARGET AUDIENCE?
+                            <h1 className="text-2xl font-bold  mt-10">
+                              What is the target audience ?
                             </h1>
                             <p className="text-md lg:text-xl font-light mt-4 text-gray-800 ">
                               {item.content}
@@ -154,7 +154,10 @@ export default function Page({ params }: { params: { slug: string } }) {
                             collapsible
                             className="md:w-full flex flex-col gap-2"
                           >
-                            <AccordionItem value="item-1" className="border p-2 ">
+                            <AccordionItem
+                              value="item-1"
+                              className="border p-2 "
+                            >
                               <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
                                 Is it accessible?
                               </AccordionTrigger>
@@ -162,14 +165,22 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 Yes. It adheres to the WAI-ARIA design pattern.
                               </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-2" className="border p-2">
-                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900" >Is it styled?</AccordionTrigger>
+                            <AccordionItem
+                              value="item-2"
+                              className="border p-2"
+                            >
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it styled?
+                              </AccordionTrigger>
                               <AccordionContent className="px-4">
                                 Yes. It comes with default styles that matches
                                 the other components&apos; aesthetic.
                               </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-3" className="border p-2">
+                            <AccordionItem
+                              value="item-3"
+                              className="border p-2"
+                            >
                               <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
                                 Is it animated?
                               </AccordionTrigger>
@@ -188,7 +199,10 @@ export default function Page({ params }: { params: { slug: string } }) {
                             collapsible
                             className="md:w-full flex flex-col gap-2"
                           >
-                            <AccordionItem value="item-1" className="border p-2 ">
+                            <AccordionItem
+                              value="item-1"
+                              className="border p-2 "
+                            >
                               <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
                                 Is it accessible?
                               </AccordionTrigger>
@@ -196,14 +210,22 @@ export default function Page({ params }: { params: { slug: string } }) {
                                 Yes. It adheres to the WAI-ARIA design pattern.
                               </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-2" className="border p-2">
-                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900" >Is it styled?</AccordionTrigger>
+                            <AccordionItem
+                              value="item-2"
+                              className="border p-2"
+                            >
+                              <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
+                                Is it styled?
+                              </AccordionTrigger>
                               <AccordionContent className="px-4">
                                 Yes. It comes with default styles that matches
                                 the other components&apos; aesthetic.
                               </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-3" className="border p-2">
+                            <AccordionItem
+                              value="item-3"
+                              className="border p-2"
+                            >
                               <AccordionTrigger className="font-semibold text-gray-900 hover:text-gray-900">
                                 Is it animated?
                               </AccordionTrigger>
@@ -275,7 +297,10 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <Users className="text-[#344A80]" />
                     </div>
                     <Separator />
-                    <Button onClick={() => router.push('/checkout')} className="w-full h-10 bg-[#344A80] text-white font-semibold rounded-none text-lg mt-6 p-4">
+                    <Button
+                      onClick={() => router.push("/checkout")}
+                      className="w-full h-10 bg-[#344A80] text-white font-semibold rounded-none text-lg mt-6 p-4"
+                    >
                       Buy This Course
                     </Button>
                     <Button
