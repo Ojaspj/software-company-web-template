@@ -25,13 +25,13 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <div className="w-full min-h-screen">
       <Wrapper>
-        <div className="w-full h-auto ">
+        <div className="w-full h-auto py-8 ">
           {courses.map((item) =>
             params.slug.replace(/-/g, " ") === item.name.toLowerCase() ? (
               <div className="flex flex-col md:flex-row gap-8 w-full md:p-8 py-12  h-full">
                 {/* left part  */}
                 <div className="flex flex-col w-full md:w-[70%]  h-full ">
-                  <h1 className="text-3xl lg:text-6xl font-bold ">
+                  <h1 className="text-3xl lg:text-5xl font-bold ">
                     {item.name}
                   </h1>
                   <Tabs
@@ -55,30 +55,30 @@ export default function Page({ params }: { params: { slug: string } }) {
                             />
                           </div>
                           <div className="my-4  h-auto w-full ">
-                            <p className="text-md md:text-lg font-light mt-4 ">
+                            <p className="text-md lg:text-xl font-light mt-4 text-gray-800 ">
                               {item.overview}
                             </p>
-                            <h1 className="text-2xl font-bold font-serif mt-10">
+                            <h1 className="text-3xl font-bold  mt-10">
                               COURSE DESCRIPTION{" "}
                             </h1>
 
-                            <p className="text-md md:text-lg font-light mt-4 ">
+                            <p className="text-md lg:text-xl font-light mt-4 text-gray-800">
                               {item.description}
                             </p>
-                            <h1 className="text-2xl font-bold font-serif mt-10">
+                            <h1 className="text-3xl font-bold  mt-10">
                               MAIN FEATURES{" "}
                             </h1>
-                            <div className="text-md md:text-lg font-light mt-4 px-4 ">
+                            <div className="text-md lg:text-xl font-light mt-4 px-4 text-gray-800 ">
                               <ul>
                                 {item.features.map((item) => (
                                   <li className="list-disc">{item}</li>
                                 ))}
                               </ul>
                             </div>
-                            <h1 className="text-2xl font-bold font-serif mt-10">
+                            <h1 className="text-3xl font-bold  mt-10">
                               WHAT IS THE TARGET AUDIENCE?
                             </h1>
-                            <p className="text-md md:text-lg font-light mt-4 ">
+                            <p className="text-md lg:text-xl font-light mt-4 text-gray-800 ">
                               {item.content}
                             </p>
                           </div>

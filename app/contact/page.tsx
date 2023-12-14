@@ -81,13 +81,13 @@ export default function Contact() {
       <div>
         <Wrapper className=" flex flex-col md:flex-row gap-40 justify-between md:px-8 h-auto ">
           <div className=" w-full md:w-[50%] my-8 h-full ">
-            <h1 className=" text-lg md:text-xl tracking-tighter text-gray-600 font-bold">
+            <h1 className=" text-lg md:text-xl tracking-tight text-gray-600 font-bold">
               CONTACT US
             </h1>
-            <h1 className=" mt-4 text-4xl font-bold tracking-tight lg:text-4xl">
+            <h1 className=" mt-4 text-4xl font-bold tracking-tight lg:text-5xl">
               Are You Interested In Online Learning? Contact Us.
             </h1>
-            <p className="font-light text-gray-700 text-md mt-4">
+            <p className="font-light text-gray-700 text-lg mt-4">
               Contact our top-notch educationalist in the UK that has huge{" "}
               <br />
               expertise in providing futuristic solutions to all aspiring
