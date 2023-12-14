@@ -42,10 +42,10 @@ export default function Main() {
           {/* left part  */}
           <div className="flex flex-col  mt-28 mb-60 md:justify-center w-full  md:w-1/2 h-full ">
             <div>
-              <h1 className="  text-4xl font-serif font-bold tracking-tight lg:text-7xl">
+              <h1 className=" text-5xl lg:text-8xl   tracking-tighter ">
                 Bringing your{" "}
-                <span className="  italic text-[#344A80]">ideas and</span>{" "}
-                <span className="italic text-[#344A80]">innovations</span> to
+                <span className="   text-[#344A80]">ideas and</span>{" "}
+                <span className="  text-[#344A80]">innovations</span> to
                 life.
               </h1>
               <h2 className=" text-gray-500 font-light tracking-tight my-4 text-lg md:text-xl">
@@ -70,13 +70,13 @@ export default function Main() {
           </div>
         </div>
         {/* trsuted by companies  */}
-        <div className="w-full h-[70vh]   text-center md:p-10 my-0 md:my-14 flex flex-col  items-center">
-          <h1 className=" text-3xl md:text-6xl font-bold font-serif ">
+        <div className="w-full h-[70vh] text-center md:p-10 my-0 md:my-14 flex flex-col  items-center">
+          <h1 className=" text-3xl lg:text-6xl font-bold  ">
             Trusted by <span className="text-[#344A80]">100+</span> companies{" "}
             <br className="hidden md:block" />
             and new ventures
           </h1>
-          <h2 className=" text-gray-400 font-light my-4 tracking-tight text-lg md:text-xl">
+          <h2 className=" text-gray-500 font-light my-4 tracking-tight text-lg lg:text-xl">
             We have helped many companies and startups to{" "}
             <br className="hidden md:flex" /> build their products and launch
             faster.
@@ -92,10 +92,10 @@ export default function Main() {
       <Wrapper>
         <div className="flex flex-col w-full h-auto  py-14">
           <div>
-            <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
+            <h1 className=" text-4xl lg:text-6xl font-bold  text-center">
               Tech Stack
             </h1>
-            <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+            <h2 className=" text-gray-500 font-light my-2 tracking-tight text-lg md:text-xl text-center">
               We use latest technologies <br /> to build product.
             </h2>
           </div>
@@ -150,10 +150,10 @@ export default function Main() {
       <Wrapper>
         <div className="w-full h-auto my-20 ">
           <div>
-            <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
+            <h1 className=" text-4xl lg:text-6xl font-bold  text-center">
               Top Courses
             </h1>
-            <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+            <h2 className=" text-gray-500 font-light my-2 tracking-tight text-lg md:text-xl text-center">
               We offer a variety of courses to help you get started.
             </h2>
           </div>
@@ -167,10 +167,10 @@ export default function Main() {
         <div className="  w-full h-auto my-20 bg-accent py-12 rounded-xl ">
           <div className="flex flex-col justify-center items-center ">
             <div className="">
-              <h1 className=" text-4xl md:text-5xl font-bold font-serif text-center">
+              <h1 className=" text-4xl md:text-6xl font-bold  text-center">
                 Client Reviews
               </h1>
-              <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+              <h2 className=" text-gray-500 font-light my-2 tracking-tight text-lg md:text-xl text-center">
                 We have worked with many clients.
               </h2>
             </div>

@@ -31,7 +31,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div className="flex flex-col md:flex-row gap-8 w-full md:p-8 py-12  h-full">
                 {/* left part  */}
                 <div className="flex flex-col w-full md:w-[70%]  h-full ">
-                  <h1 className="font-serif text-3xl md:text-4xl font-bold text-[#344A80] ">
+                  <h1 className="text-3xl lg:text-6xl font-bold ">
                     {item.name}
                   </h1>
                   <Tabs

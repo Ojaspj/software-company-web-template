@@ -6,8 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-
-
 export default function Careers() {
   const router = useRouter();
   return (
@@ -16,10 +14,10 @@ export default function Careers() {
         <div className="w-full h-auto  md:p-8  pt-20 ">
           <div className="flex h-screen md:h-[77vh] ">
             <div className="w-full  flex flex-col md:items-center md:justify-center">
-              <h1 className="text-left md:text-center text-lg md:text-xl tracking-tighter text-gray-600 font-bold">
+              <h1 className="text-left md:text-center text-lg md:text-xl tracking-tight text-gray-600 font-bold">
                 CAREERS
               </h1>
-              <h1 className=" text-left md:text-center mt-4 text-4xl font-serif font-bold tracking-tight lg:text-7xl">
+              <h1 className=" text-left md:text-center mt-4 text-4xl  font-bold tracking-tight lg:text-7xl">
                 Unlock your{" "}
                 <span className="text-[#344A80] font-semibold">potential,</span>{" "}
                 <br /> Building tomorrow's tech{" "}
@@ -49,14 +47,14 @@ export default function Careers() {
       {/* job openings  */}
       <div className="w-full h-auto  my-8 bg-accent rounded-xl">
         <Wrapper>
-          <div className=" w-full  flex pt-8 md:p-8 flex-col ">
+          <div className=" w-full  flex pt-8 lg:p-8 flex-col ">
             <h1
               id="career"
-              className="text-center  text-4xl md:text-5xl tracking-tight font-serif font-semibold"
+              className="text-center  text-4xl lg:text-6xl tracking-tight font-semibold"
             >
               Current openings
             </h1>
-            <h2 className=" text-gray-400 font-light my-2 tracking-tight text-lg md:text-xl text-center">
+            <h2 className=" text-gray-500 font-light my-2 tracking-tight text-lg lg:text-xl text-center">
               Join us on the journey of innovation and growth.
             </h2>
             <div className="flex flex-col md:p-8  md:px-10 my-8 h-auto w-auto">
@@ -70,7 +68,11 @@ export default function Careers() {
                 )}
                 {jobData.map((job) => (
                   <div
-                    onClick={() => router.push(`/careers/${job.post.toLowerCase().replace(/\s/g, "-")}`)}
+                    onClick={() =>
+                      router.push(
+                        `/careers/${job.post.toLowerCase().replace(/\s/g, "-")}`
+                      )
+                    }
                     className="flex flex-col md:flex-row md:justify-between  md:items-center w-auto md:w-full h-auto p-2  my-4 border-2 cursor-pointer hover:border-[#344A80] rounded md:p-4 "
                   >
                     <div className="md:w-1/2 h-full ">

@@ -41,9 +41,9 @@ export default function Course() {
           alt=""
         />
         <div className="absolute w-full h-[80vh] md:h-[30vh]  bg-black/20 top-0"></div>
-        <div className="  text-center  absolute w-full border  md:text-left top-44 md:top-0 p-0 md:p-8 text-white font-bold ">
-          <h1 className=" text-xl md:text-lg tracking-tighter">START WITH</h1>
-          <h1 className=" mt-4 text-5xl md:text-4xl font-serif tracking-tight lg:text-5xl">
+        <div className="  text-center  absolute w-full   lg:text-left top-44 md:top-0 p-0 lg:p-16 text-white font-bold ">
+          <h1 className=" text-xl lg:text-lg tracking-tight">START WITH</h1>
+          <h1 className=" mt-4 text-4xl   tracking-tight lg:text-5xl">
             Professional Online <br /> Courses For Achievers
           </h1>
         </div>
