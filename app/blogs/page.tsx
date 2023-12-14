@@ -1,10 +1,12 @@
+"use client"
 import Wrapper from "@/components/Wrapper";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-const blogData = [
+export const blogData = [
   {
-    title: "Introducing  Labs: Innovation That Fuels the Way We Work",
+    title: "Introducing Labs Innovation That Fuels the Way We Work",
     description:
       "The future of work is a topic that has been discussed for decades, but the COVID-19 pandemic has accelerated the need for change. The pandemic has forced companies to rethink how they operate and what they need to do to survive in this new world. In this blog post, we will discuss some of the trends that are shaping the future of work and how you can prepare your business for these changes.",
     image:
@@ -45,11 +47,12 @@ const blogData = [
   },
 ];
 
-export default function About() {
+export default function Blogs() {
+  const router = useRouter();
   return (
     <div className="w-full min-h-screen h-auto">
       <Wrapper>
-        <div className="w-[70%] h-auto md:h-[30vh] md:p-8 py-12">
+        <div className="w-[70%] h-auto md:h-[30vh] md:p-8 py-10">
           <h1 className=" text-xl tracking-tight text-gray-600 font-bold">
             BLOG
           </h1>
@@ -61,7 +64,8 @@ export default function About() {
         <div className="flex justify-center md:p-14 w-full h-auto">
           <div className="grid grid-cols-1 gap-0 md:gap-6 mt-8 md:grid-cols-3">
             {blogData.map((blog) => (
-              <Card className="h-[380px] shadow-none border-none  md:w-[380px]  rounded-xl ">
+              <Card onClick={() => router.push(`/blogs/${blog.title.toLowerCase().replace(/\s/g, "-")}`)} 
+              className="h-[380px] shadow-none border-none  md:w-[380px]  rounded-xl ">
                 <CardContent className="p-0 h-auto ">
                   <div className="w-full  cursor-pointer ">
                     <img
@@ -75,9 +79,7 @@ export default function About() {
                     <h1 className=" mt-3 text-2xl font-bold hover:text-[#344A80]">
                       {blog.title}
                     </h1>
-                    {/* <p className="mt-4 text-gray-800 text-lg line-clamp-3 font-light">
-                      {blog.description}
-                    </p> */}
+                   
                   </div>
                 </CardContent>
               </Card>
