@@ -1,7 +1,7 @@
 "use client";
 import Wrapper from "@/components/Wrapper";
+import { blogData } from "@/lib/blog-data";
 import React from "react";
-import { blogData } from "../page";
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
