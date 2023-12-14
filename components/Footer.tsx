@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col mt-4 md:mt-0">
               <div className="flex flex-col justify-center md:flex-row w-full md:w-[1010px] md:justify-between  border-green-500 ">
-                <div className="flex flex-col h-[300px] w-56  md:p-8 space-y-4  ">
+                <div className="flex flex-col h-[300px] w-70  md:p-8 space-y-4  ">
                   <h1 className=" text-2xl font-bold text-gray-700 tracking-tight">
                     Company
                   </h1>
@@ -63,6 +63,9 @@ export default function Footer() {
                     </li>
                     <li className="hover:text-[#344A80]">
                       <Link href="/contact">Contact Us</Link>
+                    </li>
+                    <li className="hover:text-[#344A80]">
+                      <Link href="/become-an-instructor">Become an Instructor</Link>
                     </li>
                   </ul>
                 </div>
