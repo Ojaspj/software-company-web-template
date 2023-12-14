@@ -50,10 +50,10 @@ export default function About() {
     <div className="w-full min-h-screen h-auto">
       <Wrapper>
         <div className="w-[70%] h-auto md:h-[30vh] md:p-8 py-12">
-          <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">
+          <h1 className=" text-xl tracking-tight text-gray-600 font-bold">
             BLOG
           </h1>
-          <h1 className=" mt-4 text-5xl font-serif font-bold tracking-tight lg:text-6xl">
+          <h1 className=" mt-4 text-5xl  font-bold tracking-tight lg:text-6xl">
             <span className="text-[#344A80] font-semibold">Navigating</span>{" "}
             insights, trends, and innovations
           </h1>

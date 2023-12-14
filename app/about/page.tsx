@@ -71,12 +71,12 @@ export default function About() {
           <div className="flex h-screen md:h-[70vh]">
             {/* left part  */}
             <div className="w-full  flex flex-col items-center justify-center">
-              <h1 className=" text-xl tracking-tighter text-gray-600 font-bold">ABOUT US</h1>
-              <h1 className=" text-center mt-4 text-5xl font-serif font-bold tracking-tight lg:text-7xl">
+              <h1 className=" text-xl tracking-tight text-gray-600 font-bold">ABOUT US</h1>
+              <h1 className=" text-center mt-4 text-4xl  font-bold tracking-tight lg:text-7xl">
                 <span className="   text-[#344A80]">Designing</span> the future <br />
                 with excellence.
               </h1>
-              <h2 className=" text-gray-500 font-light my-4 text-lg md:text-xl text-center">
+              <h2 className=" text-gray-600 font-light my-4 text-lg lg:text-xl text-center">
                 <span className="text-[#344A80] font-semibold">
                   Silicon Tech
                 </span>
@@ -102,20 +102,20 @@ export default function About() {
       {/* years client and teams number  */}
       <div className="flex flex-col md:flex-row justify-center gap-10 w-auto p-20 h-auto bg-accent  my-8  font-bold text-5xl">
         <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
-          <h1 className="text-[#344A80] font-serif">100+</h1>
-          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
+          <h1 className="text-[#344A80] ">100+</h1>
+          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tight  text-left">
             Delighted Partnerships
           </h2>
         </div>
         <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
-          <h1 className="text-[#344A80] font-serif">4+</h1>
-          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
+          <h1 className="text-[#344A80] ">4+</h1>
+          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tight  text-left">
             Years of innovation
           </h2>
         </div>
         <div className="  flex flex-col justify-center items-center w-auto md:w-60 h-24 ">
-          <h1 className="text-[#344A80] font-serif">10+</h1>
-          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tighter  text-left">
+          <h1 className="text-[#344A80] ">10+</h1>
+          <h2 className=" text-gray-500 font-light my-2 text-lg tracking-tight  text-left">
             Team Member
           </h2>
         </div>
@@ -125,10 +125,10 @@ export default function About() {
       <Wrapper>
         <div className="w-full h-auto  px-6 py-8 ">
           <div className="flex flex-col justify-center items-center">
-            <h1 className=" text-gray-600 text-xl tracking-tighter font-bold text-center">
+            <h1 className=" text-gray-600 text-xl tracking-tight font-bold text-center">
               TEAM
             </h1>
-            <h2 className="  font-bold font-serif text-center my-4 text-5xl">
+            <h2 className="  font-bold  text-center my-4 lg:text-6xl">
               Meet the <span className="text-[#344A80]">brilliant minds</span>{" "}
               <br /> behind the magic
             </h2>
@@ -143,10 +143,10 @@ export default function About() {
                     />
                     <div className="flex">
                       <div className="flex flex-col">
-                        <h1 className="text-xl text-gray-700 font-bold font-serif mt-4">
+                        <h1 className="text-xl text-gray-700 font-bold  mt-4">
                           {item.name}
                         </h1>
-                        <h2 className="text-gray-500 font-light text-lg tracking-tighter  text-left">
+                        <h2 className="text-gray-500 font-light text-lg tracking-tight  text-left">
                           {item.role}
                         </h2>
                       </div>

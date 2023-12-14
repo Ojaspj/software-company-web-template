@@ -31,7 +31,7 @@ export default function Services() {
     <div>
       <div className="mx-0 w-full h-auto lg:h-[80vh] rounded-xl p-4 md:p-10 my-8 flex flex-col bg-black text-white ">
         <div className=" text-left">
-          <h1 className=" text-6xl font-bold font-serif "></h1>
+          <h1 className=" text-6xl font-bold  "></h1>
           <h2 className=" flex items-center  font-light my-4 text-lg md:text-xl  md:tracking-tighter">
             Choose from our broad selection of services
             <Separator className="block w-[30%] md:w-[70%] md:ml-7 bg-gray-700 " />
@@ -39,7 +39,7 @@ export default function Services() {
         </div>
         <div className=" w-full h-auto flex flex-wrap gap-6 my-4 ">
           {data.map((item, index) => (
-            <Card className=" bg-black text-white border-gray-700 hover:bg-[#213872]  hover:border-none  w-full lg:w-[49%] h-[290px]  lg:h-[210px] py-6 font-serif rounded-md   hover:text-white cursor-pointer">
+            <Card className=" bg-black text-white border-gray-700 hover:bg-[#213872]  hover:border-none  w-full lg:w-[49%] h-[290px]  lg:h-[210px] py-6  rounded-md   hover:text-white cursor-pointer">
               <CardContent>
                 <h1 className=" font-extrabold md:font-bold text-3xl md:text-5xl tracking-tight ">
                   {item.title}

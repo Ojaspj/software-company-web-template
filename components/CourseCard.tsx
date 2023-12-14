@@ -17,7 +17,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Card className="p-0 rounded-none w-full lg:w-[330px] h-96 relative cursor-pointer shadow-lg border-none">
+    <Card className="p-0 rounded-none w-full lg:w-[325px] h-96 relative cursor-pointer shadow-lg border-none">
       <div className="absolute top-[140px] right-5 h-[68px] w-[68px] rounded-full bg-[#344A80] text-white flex justify-center items-center font-semibold text-sm">
         Rs. 9999
       </div>

@@ -23,15 +23,15 @@ export class ClientsReviewSlider extends Component {
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Favatars-99%2F62%2Favatar-375-456327-512.png&f=1&nofb=1&ipt=fb42da24b11d343deb9f1e8e00038d30b7035270058e5699a173385bbfb5ee9b&ipo=images"
                 />
               </div>
-              <h1 className="my-4 text-xl font-semibold font-serif text-gray-700">
+              <h1 className="my-4 text-xl font-semibold  text-gray-700">
                 Hari Bdr
               </h1>
             </div>
             <div className="w-full md:w-[60%] h-full  flex items-center relative p-3 md:p-8 ">
-              <div className="absolute -top-4 md:top-16 md:left-0 text-6xl font-serif text-gray-500">
+              <div className="absolute -top-4 md:top-16 md:left-0 text-6xl  text-gray-500">
                 "
               </div>
-              <div className="absolute top-[135px] md:top-44 right-2 md:right-0 text-6xl font-serif text-gray-500">
+              <div className="absolute top-[135px] md:top-44 right-2 md:right-0 text-6xl  text-gray-500">
                 "
               </div>
                 <p className="font-light text-md md:text-lg text-justify text-gray-700 ">
@@ -50,15 +50,15 @@ export class ClientsReviewSlider extends Component {
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Favatars-99%2F62%2Favatar-375-456327-512.png&f=1&nofb=1&ipt=fb42da24b11d343deb9f1e8e00038d30b7035270058e5699a173385bbfb5ee9b&ipo=images"
                 />
               </div>
-              <h1 className="my-4 text-xl font-semibold font-serif text-gray-700">
+              <h1 className="my-4 text-xl font-semibold  text-gray-700">
                 Hari Bdr
               </h1>
             </div>
             <div className="w-full md:w-[60%] h-full  flex items-center relative p-3 md:p-8 ">
-              <div className="absolute -top-4 md:top-16 md:left-0 text-6xl font-serif text-gray-500">
+              <div className="absolute -top-4 md:top-16 md:left-0 text-6xl  text-gray-500">
                 "
               </div>
-              <div className="absolute top-[135px] md:top-44 right-2 md:right-0 text-6xl font-serif text-gray-500">
+              <div className="absolute top-[135px] md:top-44 right-2 md:right-0 text-6xl  text-gray-500">
                 "
               </div>
                 <p className="font-light text-md md:text-lg text-justify text-gray-700 ">

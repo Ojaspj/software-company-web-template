@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Button
               variant={"link"}
-              className=" w-auto border p-3 transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tighter text-md my-4 hover:no-underline cursor-pointer"
+              className=" w-auto h-14 border p-4 transition-transform  hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tight text-lg  hover:no-underline cursor-pointer"
             >
               <Link href={"/contact"}>BUILD WITH US</Link>
             </Button>
