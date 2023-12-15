@@ -20,8 +20,10 @@ import {
   AccordionContent,
 } from "@radix-ui/react-accordion";
 import { NavMenu } from "./NavMenu";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [shadow, setShadow] = useState(false);
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -42,11 +44,12 @@ export default function Navbar() {
     <div
       className={`sticky top-0 z-20 bg-white w-full h-24  flex items-center ${
         shadow ? "shadow-md" : null
-      }`}
+      }
+      `}
     >
       <Wrapper>
         <div
-          className={`flex  pr-4 h-full w-full   flex-row justify-between items-center `}
+          className={`flex  pr-4 h-full w-full  flex-row justify-between items-center `}
         >
           {/* logo  */}
           <div className="">
@@ -61,17 +64,33 @@ export default function Navbar() {
             </div>
           </div>
           {/* nav menus  */}
-          <div className="">
+          <div
+            className={`
+            ${pathname === "/login" ? "hidden" : null}
+            ${pathname === "/signup" ? "hidden" : null}
+            `}
+          >
             <NavMenu />
           </div>
 
           {/* build  button */}
-          <div className="hidden md:block">
+          <div className={`hidden lg:flex gap-2`}>
             <Button
               variant={"link"}
-              className=" w-auto h-14 border p-4 transition-transform  hover:scale-110 rounded-none border-gray-700 bg-gray-700 hover:bg-[#213872] text-white hover:text-white  tracking-tight text-lg  hover:no-underline cursor-pointer"
+              className={`
+            ${pathname === "/login" ? "hidden" : null}
+              w-auto h-14  p-4 transition-transform  hover:scale-110 rounded-xl border-gray-700   text-black hover:text-[#344A80]  tracking-wide text-lg  hover:no-underline cursor-pointer`}
             >
-              <Link href={"/contact"}>BUILD WITH US</Link>
+              <Link href={"/login"}>Login</Link>
+            </Button>
+            <Button
+              variant={"link"}
+              className={` 
+            w-auto h-14 border p-3 transition-transform  hover:scale-110 rounded-xl border-gray-700  hover:bg-[#213872] text-black hover:text-white  tracking-wide text-lg  hover:no-underline cursor-pointer"
+            ${pathname === "/signup" ? "hidden" : null}
+            `}
+            >
+              <Link href={"/signup"}>Sign Up</Link>
             </Button>
           </div>
 
@@ -117,7 +136,6 @@ export default function Navbar() {
                         <NavigationMenuItem>
                           <Accordion
                             type="single"
-
                             collapsible
                             className=" w-[200px]"
                           >
@@ -158,7 +176,6 @@ export default function Navbar() {
                               </AccordionContent>
                             </AccordionItem>
                           </Accordion>
-                          
                         </NavigationMenuItem>
                         <NavigationMenuItem onClick={() => setOpen(false)}>
                           <Link href="/careers" legacyBehavior passHref>
@@ -196,7 +213,10 @@ export default function Navbar() {
                             </NavigationMenuLink>
                           </Link>
                         </NavigationMenuItem>
-                        <NavigationMenuItem className=" w-56" onClick={() => setOpen(false)}>
+                        <NavigationMenuItem
+                          className=" w-56"
+                          onClick={() => setOpen(false)}
+                        >
                           <Link href="/contact" legacyBehavior passHref>
                             <Button
                               variant={"link"}

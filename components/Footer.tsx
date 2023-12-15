@@ -1,3 +1,5 @@
+
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
@@ -5,10 +7,24 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import Wrapper from "./Wrapper";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const path = usePathname();
   return (
-    <div>
+    <div className={`
+    ${
+      path.startsWith("/login")
+        ? " hidden "
+        : "block"
+    }
+    ${
+      path.startsWith("/signup")
+        ? " hidden "
+        : "block"
+    }
+    `}
+    >
       <Separator />
       <Wrapper>
         <div className="w-full h-auto">
