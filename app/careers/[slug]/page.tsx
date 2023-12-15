@@ -37,7 +37,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       </span>{" "}
                     </h1>
                   </div>
-                  <ApplyNowButton  />
+                  <ApplyNowButton />
                 </div>
               ) : null
             )}
@@ -53,10 +53,15 @@ export default function Page({ params }: { params: { slug: string } }) {
                       Welcome to Silicon Team
                     </h1>
                     <p className=" text-xl font-light my-4 text-gray-800">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vero adipisci quae id? Consectetur sit dolore aut tempora
-                      cupiditate laudantium, excepturi eligendi ut earum quas
-                      vero fugiat placeat impedit beatae? Cum.
+                      As a software development company, we specialize in
+                      creating robust mobile or web applications, crafting scalable solutions,
+                      or innovating with the latest technologies. <br /> <br />{" "}
+                      Explore below to discover the exciting opportunities that
+                      await you. Dive into the details, including the specific
+                      requirements and skills needed for each role. Our team
+                      thrives on innovation, embraces challenges, and is
+                      dedicated to shaping the future of technology. <br /> <br /> Join
+                      us on this journey of excellence! <br />
                     </p>
                     <h1 className="text-3xl font-bold  ">
                       Essential Knowledge, Skills and Experience
@@ -85,8 +90,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                     <Separator />
                     <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between lg:items-center  my-10">
                       <div className="flex gap-4">
-                        <ApplyNowButton  />
-                        
+                        <ApplyNowButton />
+
                         <Button
                           variant={"outline"}
                           className="flex gap-2 w-auto h-14 border transition-transform hover:border-white hover:scale-110 rounded-none border-gray-700  hover:bg-[#213872] text-gray-600 hover:text-white  tracking-tighter text-lg font-semibold hover:no-underline cursor-pointer"
