@@ -25,53 +25,39 @@ export default function Page({ params }: { params: { slug: string } }) {
                     {component.description}
                   </p>
                   <Separator />
-                  <h1 className="text-2xl font-bold  mt-10">
-                    Overview
-                  </h1>
+                  <h1 className="text-2xl font-bold  mt-10">Overview</h1>
                   <p className="text-lg lg:text-xl font-light mt-4 text-gray-800 ">
-                    Welcome to our {component.title} service, where innovation
-                    meets functionality to create exceptional digital
-                    experiences. Our team of skilled developers is dedicated to
-                    bringing your vision to life, crafting robust and scalable
-                    web solutions tailored to meet your unique business needs.
+                    {component.overview}
                   </p>
-                  <h1 className="text-2xl font-bold  mt-10">
-                    What we offer ?
-                  </h1>
-                  <div className="text-lg lg:text-xl font-light p-5 ">
-                    {component.offerings.map((item) => (
-                      <ul className=" list-disc my-2">
-                        <li className="font-semibold ">
-                          {item.name} <br />
-                          <p className="font-light text-gray-800">{item.description}</p>
+                  <h1 className="text-2xl font-bold  mt-8">What we offer ?</h1>
+                  <div className="text-lg lg:text-xl font-light px-5 mt-4">
+                    {component.offers.map((item) => (
+                      <ul className=" list-disc my-1">
+                        <li className="text-lg lg:text-xl font-light text-gray-800 ">
+                          {item}
                         </li>
                       </ul>
                     ))}
                   </div>
-                  <h1 className="text-2xl font-bold  mt-10">
-                    Why us ?
-                  </h1>
-                  <div className="text-lg md:text-xl font-light p-5">
-                    {component.whyChooseUs.points.map((item) => (
-                      <ul className=" list-disc ">
-                        <li className="text-gray-800">
-                          {item} <br />
-                        </li>
-                      </ul>
-                    ))}
+
+                  <h1 className="text-2xl font-bold  mt-8">Why us ?</h1>
+                  <div className="text-lg md:text-xl font-light mt-4">
+                    {component.whyUs}
                   </div>
-                  <h1 className="text-2xl font-bold mt-10">
+                  <h1 className="text-2xl font-bold mt-8">
                     Let's Build Your Digital Presence
                   </h1>
                   <div>
-                    <p className="text-lg md:text-xl font-light p-5 text-gray-800">
+                    <p className="text-lg md:text-xl font-light  mt-4  text-gray-800">
                       Ready to elevate your online presence? Whether you need a
                       brand-new website, an e-commerce platform, or a revamp of
                       your existing site, we have the expertise to turn your
                       vision into reality. Let's embark on a journey of digital
                       transformation together.{" "}
                       <Link href={"/contact"}>
-                        <span className="text-[#344A80] font-semibold">Contact us</span>
+                        <span className="text-[#344A80] font-semibold">
+                          Contact us
+                        </span>
                       </Link>{" "}
                       today to discuss your web development needs and take the
                       first step toward a powerful online presence.
