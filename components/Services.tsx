@@ -1,32 +1,42 @@
+"use client";
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const data = [
   {
     title: "Web Development",
     description: "Building dynamic and responsive web solutions",
     description2: "Scalable web app development services",
+    link: '/web-development'
   },
   {
     title: "Mobile App Development",
     description: "Crafting innovative mobile experiences",
     description2: "iOS and android app development services",
+    link: '/mobile-app-development'
+
   },
   {
     title: "E-commerce Solutions",
     description: "Creating seamless online shopping experiences",
     description2: "End-to-end e-commerce development services",
+    link: '/ecommerce-solutions'
+
   },
   {
     title: "UI/UX Design",
     description: "User-centric design for seamless experiences",
     description2: "Intuitive and engaging interface design",
+    link: '/ui-ux-design'
+
   },
 ];
 
 export default function Services() {
+  const router = useRouter();
   return (
     <div>
       <div className="mx-0 w-full h-auto lg:h-[80vh] rounded-xl p-4 md:p-10 my-8 flex flex-col bg-black text-white ">
@@ -52,6 +62,7 @@ export default function Services() {
 
                 <Button
                   variant={"link"}
+                  onClick={() => router.push(`/services/${item.link}`)}
                   className=" w-32 border p-2 transition-transform hover:border-white hover:scale-110 rounded-full border-gray-700 bg-black hover:bg-[#213872] text-white hover:text-white  tracking-tight text-lg my-4 hover:no-underline cursor-pointer"
                 >
                   Learn more
