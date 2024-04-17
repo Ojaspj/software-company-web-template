@@ -55,11 +55,8 @@ export default function Footer() {
 
           <div className="w-full flex flex-wrap justify-between py-8 ">
             <div className=" h-auto w-auto">
-              <img
-                className="h-20 w-auto -ml-6 md:-ml-0"
-                src="https://silicontechnepal.com.np/static/media/silicontech-transparent.69d53de28e59ff4b6157.png"
-                alt="logo"
-              />
+               <h1 className="text-xl font-bold">Ojas Codes</h1>
+              
             </div>
             <div className="flex flex-col mt-4 md:mt-0">
               <div className="flex flex-col justify-center md:flex-row w-full md:w-[1010px] md:justify-between  border-green-500 ">
@@ -140,7 +137,7 @@ export default function Footer() {
           </div>
           <Separator />
           <div className="w-full flex flex-col md:flex-row items-center py-4 lg:py-0 justify-between lg:h-[80px]  text-gray-600  font-light text-md tracking-tight">
-            <h1>Copyright 2023, Silicon Tech Nepal Pvt Ltd.</h1>
+            <h1>Copyright 2023 &copy; Prajwal Joshi</h1>
             <Link href="/" className="hover:text-[#344A80]">
               Privacy Policy
             </Link>

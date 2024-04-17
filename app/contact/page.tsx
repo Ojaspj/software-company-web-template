@@ -189,13 +189,9 @@ export default function Contact() {
             exclusive map listing provided below.
           </p>
 
-            <div className="mb-8 my-4 shadow-xl">
-              <iframe
-                width="100%"
-                height="400"
-                scrolling="no"
-                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Silicon%20Tech,%20Nepal+(Silicon%20Tech)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>
+            <div className="mb-8 my-4 shadow-xl w-full h-96 border flex items-center justify-center text-2xl ">
+              Your map goes here.
+              
             </div>
             <div className="flex flex-col md:flex-row justify-center w-full md:gap-10 ">
               <div className="flex flex-col md:flex-row gap-2 md:px-4 items-center text-center md:text-left">
@@ -207,7 +203,6 @@ export default function Contact() {
                     Area Location
                   </h1>
                   <h1 className="text-md font-light tracking-tight my-2 ">
-                    Dibyeshwori, Townplanning Pepsicola <br />
                     Kathmandu, Nepal <br />
                   </h1>
                 </div>
@@ -219,7 +214,7 @@ export default function Contact() {
                 <div className="h-24 w-auto">
                   <h1 className="  text-xl font-medium">Contact</h1>
                   <h1 className="text-md font-light tracking-tight my-2 ">
-                    hi@silicontech.com <br />
+                    hi@ojascodes.com <br />
                     01-4488777
                   </h1>
                 </div>

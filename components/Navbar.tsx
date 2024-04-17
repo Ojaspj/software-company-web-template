@@ -55,11 +55,7 @@ export default function Navbar() {
           <div className="">
             <div className="">
               <Link href={"/"}>
-                <img
-                  className="h-24 w-auto"
-                  src="https://silicontechnepal.com.np/static/media/silicontech-transparent.69d53de28e59ff4b6157.png"
-                  alt="logo"
-                />
+               <h1 className="text-xl font-bold">Ojas Codes</h1>
               </Link>
             </div>
           </div>
