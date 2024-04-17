@@ -6,7 +6,6 @@ import CourseCard from './CourseCard';
 interface Course {
   name: string;
   category: string;
-  overview: string;
 }
 
 interface CourseListProps {

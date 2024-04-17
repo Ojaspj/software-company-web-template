@@ -7,13 +7,11 @@ import { useRouter } from "next/navigation";
 interface CourseCardProps {
   name: string;
   category: string;
-  overview: string;
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({
   name,
   category,
-  overview,
 }) => {
   const router = useRouter();
   return (

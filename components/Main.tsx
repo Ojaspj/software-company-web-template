@@ -22,12 +22,8 @@ import {
   FirebaseIcon,
   FlutterIcon,
   KotlinIcon,
-  FacebookIcon,
-  GoogleIcon,
 } from "./Icon";
 import Link from "next/link";
-import { Input } from "./ui/input";
-import { Separator } from "./ui/separator";
 import { CourseBanner } from "./CourseBanner";
 import CourseCard from "./CourseCard";
 import { ClientsReviewSlider } from "./ClientsReviewSlider";

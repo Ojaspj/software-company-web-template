@@ -19,14 +19,14 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@radix-ui/react-accordion";
-import { NavMenu } from "./NavMenu";
-import { usePathname } from "next/navigation";
+// import { NavMenu } from "./NavMenu";
+// import { usePathname } from "next/navigation"
+
 
 export default function Navbar() {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const [shadow, setShadow] = useState(false);
   const [open, setOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   //get shadow while scroll
   useEffect(() => {
@@ -60,18 +60,18 @@ export default function Navbar() {
             </div>
           </div>
           {/* nav menus  */}
-          <div
+          {/* <div
             className={`
             ${pathname === "/login" ? "hidden" : null}
             ${pathname === "/signup" ? "hidden" : null}
             `}
           >
             <NavMenu />
-          </div>
+          </div> */}
 
           {/* build  button */}
           <div className={`hidden lg:flex gap-2`}>
-            <Button
+            {/* <Button
               variant={"link"}
               className={`
             ${pathname === "/login" ? "hidden" : null}
@@ -83,11 +83,11 @@ export default function Navbar() {
               variant={"link"}
               className={` 
             w-auto h-14 border p-3 transition-transform  hover:scale-110 rounded-xl border-gray-700  hover:bg-[#213872] text-black hover:text-white  tracking-wide text-lg  hover:no-underline cursor-pointer"
-            ${pathname === "/signup" ? "hidden" : null}
+            // ${pathname === "/signup" ? "hidden" : null}
             `}
             >
               <Link href={"/signup"}>Sign Up</Link>
-            </Button>
+            </Button> */}
           </div>
 
           {/* mobile menu  */}

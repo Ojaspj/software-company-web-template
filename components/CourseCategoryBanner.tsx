@@ -2,7 +2,6 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import { useRouter } from "next/navigation";
-import { Separator } from "./ui/separator";
 
 export default function CourseCategoryBanner() {
   const router = useRouter();

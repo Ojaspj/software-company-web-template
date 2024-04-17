@@ -5,7 +5,6 @@ import { Button } from "./ui/button";
 interface Course {
   name: string;
   category: string;
-  overview: string;
 }
 
 interface SearchFilterProps {
@@ -15,7 +14,6 @@ interface SearchFilterProps {
 }
 
 const SearchFilter: React.FC<SearchFilterProps> = ({
-  courses,
   onFilterChange,
   onSearch,
 }) => {

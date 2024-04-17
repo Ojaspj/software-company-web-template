@@ -1,7 +1,5 @@
 import React from "react";
 import { Card, CardContent } from "./ui/card";
-import { Separator } from "./ui/separator";
-import { Button } from "./ui/button";
 import Wrapper from "./Wrapper";
 import { FaArrowTrendUp } from "react-icons/fa6";
 

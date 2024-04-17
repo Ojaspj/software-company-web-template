@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { jobData } from "@/lib/job-data";
 import { BadgeCheck, Briefcase, Clock } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 export default function Page({ params }: { params: { slug: string } }) {
@@ -23,11 +23,11 @@ export default function Page({ params }: { params: { slug: string } }) {
             />
           </div>
           <div className="flex flex-col h-auto md:w-full mt-6 ">
-            {jobData.map((job) =>
-              params.slug.replace(/-/g, " ") === job.post.toLowerCase() ? (
+            {jobData?.map((job) =>
+              params.slug.replace(/-/g, " ") === job?.post.toLowerCase() ? (
                 <div className="py-8 flex flex-col  lg:flex-row lg:justify-between">
                   <div className="flex flex-col">
-                    <h1 className="font-bold text-4xl ">{job.post}</h1>
+                    <h1 className="font-bold text-4xl ">{job?.post}</h1>
                     <h1 className="flex gap-4 text-sm text-gray-400  my-2 ">
                       <span className="flex gap-1 items-center">
                         <Briefcase size={20} /> Full Time
@@ -46,8 +46,8 @@ export default function Page({ params }: { params: { slug: string } }) {
 
             <div className=" flex flex-col lg:flex-row justify-between w-full h-auto py-8 ">
               {/* left  */}
-              {jobData.map((job) =>
-                params.slug.replace(/-/g, " ") === job.post.toLowerCase() ? (
+              {jobData?.map((job) =>
+                params.slug.replace(/-/g, " ") === job?.post.toLowerCase() ? (
                   <div className=" w-full lg:w-[65%] h-auto">
                     <h1 className="text-3xl font-bold ">
                       Welcome to Silicon Team
@@ -67,7 +67,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       Essential Knowledge, Skills and Experience
                     </h1>
                     <div className="mt-4">
-                      {job.responsibilities.map((requirement) => (
+                      {job?.responsibilities.map((requirement) => (
                         <ul className="list-disc">
                           <li className=" text-xl ml-4 text-gray-800 font-light my-2">
                             {requirement}
@@ -79,7 +79,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       Preferred Experience
                     </h1>
                     <div className="mt-4 mb-10">
-                      {job.preferred?.map((requirement) => (
+                      {job?.preferred?.map((requirement) => (
                         <ul className="list-disc">
                           <li className=" text-xl ml-4 text-gray-800 font-light my-2">
                             {requirement}
@@ -114,8 +114,8 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div className="flex flex-col lg:w-[30%] h-full border border-gray-300 rounded-xl px-4 lg:px-6 py-9">
                 <h1 className="font-bold text-3xl  ">Other Openings</h1>
 
-                {jobData.map((job) =>
-                  params.slug.replace(/-/g, " ") != job.post.toLowerCase() ? (
+                {jobData?.map((job) =>
+                  params.slug.replace(/-/g, " ") != job?.post.toLowerCase() ? (
                     <>
                       <div className="flex flex-col">
                         <Separator className="my-4 bg-gray-300" />
@@ -123,11 +123,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                         <div className="flex flex-col ">
                           <h1 className="flex flex-col font-bold text-2xl  hover:text-[#344A80] ">
                             <Link
-                              href={`/careers/${job.post
+                              href={`/careers/${job?.post
                                 .toLowerCase()
                                 .replace(/\s/g, "-")}`}
                             >
-                              {job.post}
+                              {job?.post}
                             </Link>
                           </h1>
                           <h1 className="flex gap-4 text-sm text-gray-400 my-2  ">
