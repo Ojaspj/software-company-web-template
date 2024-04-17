@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Wrapper from "./Wrapper";
-import Lottie from "lottie-react";
-import hero from "../public/hero.json";
 import { Button } from "./ui/button";
 import Services from "./Services";
 import { courses } from "@/lib/courses-data";
@@ -60,8 +58,8 @@ export default function Main() {
           </div>
           {/* right part  */}
           <div className="hidden  md:flex items-center justify-center w-1/2 h-full">
-            <div className="w-auto h-auto ">
-              <Lottie animationData={hero} />
+            <div className="w-full h-[500px] flex items-center justify-center  border-1 ">
+              <img className="w-full h-full"src="https://img.freepik.com/free-vector/business-people-working-modern-eco-friendly-office-with-plants-flowers-biophilic-design-room-eco-friendly-workspace-green-office-concept-pinkish-coral-bluevector-isolated-illustration_335657-1646.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712361600&semt=ais" />
             </div>
           </div>
         </div>
